@@ -222,6 +222,17 @@
     .rels{list-style:none;padding-left:0}
     .family-profile{margin:.65rem 0}
   }
+  .descent-table-wrap{overflow-x:auto;margin:1rem 0 2rem}
+  .descent-table{width:100%;min-width:44rem;border-collapse:collapse;font-size:.9rem;line-height:1.45}
+  .descent-table th,.descent-table td{border:1px solid var(--line);padding:.65rem .75rem;text-align:left;vertical-align:top}
+  .descent-table th{background:var(--surface-2)}
+  .descent-table thead th{color:var(--gold)}
+  @media print{
+    .descent-table-wrap{overflow:visible}
+    .descent-table{min-width:0;font-size:9pt}
+    .descent-table tr{break-inside:avoid}
+    .descent-table thead{display:table-header-group}
+  }
 </style>
 </head>
 <body>
@@ -254,7 +265,7 @@
         <p><span class="lak">Ōpȟáŋ Glešká</span>, known in English as <strong>Chief Spotted Elk</strong>, was a Minneconjou leader. He was killed at Wounded Knee in 1890.</p>
         <p>Historical records also use the name <strong>Big Foot</strong> for an Oglala man. That is a different person. When two people show up in the records under the same English name, it's easy to mix them up.</p>
         <p>This page puts the records side by side, so you can see which person each document is about, who his documented relatives are, and how public claims compare with the records.</p>
-        <p>This site is a work in progress. I update it as time allows. If you have information or documents to contribute, please send them to Michelle Wilder-Spotted Elk.</p>
+        <p>This site is a work in progress. I update it as time allows. If you have information or documents to contribute, please send them to Michelle Wilder - Spotted Elk Tiwahe.</p>
       </div>
       <ol class="steps">
         <li>Use the comparison to work out which person a record is about.</li>
@@ -294,6 +305,26 @@
         <a href="#profile-james-pipe-on-head">James Pipe on Head</a>
       </nav>
       <h3>Primary Source Documentary Evidence</h3>
+      <div class="descent-table-wrap" role="region" aria-label="Kinship and descent comparison" tabindex="0">
+        <table class="descent-table">
+          <caption class="sr-only">Evidence summary by family line</caption>
+          <thead><tr><th scope="col">Family / Line</th><th scope="col">Sources Reviewed</th><th scope="col">Direct Descent from Chief Spotted Elk</th><th scope="col">Historical Reading</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Spotted Elk surname lines</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Richard (“Dick”) Spotted Elk line</th><td>Probate and continuity records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Weasel Bear line</th><td>Interagency correspondence, history card, probate records, and oral history</td><td>Collateral family connection documented</td><td>Closely related branch</td></tr>
+            <tr><th scope="row">Richard line</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Garnier line</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Running Eagle line</th><td>Research in progress</td><td>Research in progress</td><td>Closely related branch</td></tr>
+            <tr><th scope="row">He Crow line</th><td>Probate records, census records, and marriage timeline</td><td>Direct descent has not been established in the records reviewed</td><td>Independent line with later marital ties</td></tr>
+            <tr><th scope="row">Pipe On Head / Lone Man / Broken Nose line</th><td>Probate records, testimony, documentary and radio interviews, U.S. Park Service interviews, and Congressional Record attribution</td><td>Direct descent has not been established in the records reviewed; primary sources conflict with the public attribution</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships. The claimed direct link requires specific evidence.</td></tr>
+            <tr><th scope="row">W High Hawk line</th><td>Probate testimony and records</td><td>Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
+            <tr><th scope="row">Little Finger line</th><td>Probate records, census records, documentary and radio interviews, and U.S. Park Service interviews</td><td>Direct descent has not been established in the records reviewed</td><td>Independent documented line</td></tr>
+            <tr><th scope="row">Star Comes Out line</th><td>Marriage records and family ties</td><td>Direct descent has not been established in the records reviewed</td><td>Connection to the He Crow line</td></tr>
+            <tr><th scope="row">Mousseau line</th><td>Probate review in progress</td><td>Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
+          </tbody>
+        </table>
+      </div>
       <div id="family-profiles"></div>
       <div class="related" id="related-charts"></div>
     </div>
@@ -404,7 +435,7 @@
 -->
 <script type="application/json" id="site-data">
 {
-  "credit": "Michelle Wilder-Spotted Elk",
+  "credit": "Michelle Wilder - Spotted Elk Tiwahe",
   "comparison": {
     "columns": [
       {
