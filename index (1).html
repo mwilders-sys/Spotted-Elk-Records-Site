@@ -1,0 +1,2753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1a1918">
+<title>Who Was Chief Spotted Elk? What the Records Show</title>
+<meta name="description" content="A plain-language guide to Ōpȟáŋ Glešká (Chief Spotted Elk), the Minneconjou leader killed at Wounded Knee in 1890 — with kinship charts, public claims, and the archival records behind them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Noto+Serif:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#1a1918; --surface:#232120; --surface-2:#2c2a27; --line:#3d3a35;
+    --ivory:#f2ead8; --muted:#b9af9c; --gold:#c2a265; --gold-soft:rgba(194,162,101,.14);
+    --red:#9e2b25; --red-hover:#b3342d; --paper:#e9e1cf; --ink:#2a2622;
+    --serif:"Noto Serif",Georgia,serif; --sans:"Noto Sans",system-ui,sans-serif;
+    --radius:10px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{margin:0;background:var(--bg);color:var(--ivory);font-family:var(--sans);font-size:1.0625rem;line-height:1.65}
+  a{color:var(--gold)}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  .skip{position:absolute;left:-999px;top:.5rem;background:var(--gold);color:var(--bg);padding:.5rem 1rem;z-index:20}
+  .skip:focus{left:.5rem}
+
+  /* Nav */
+  .topnav{position:sticky;top:0;z-index:10;background:rgba(26,25,24,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .topnav ul{display:flex;gap:.25rem;list-style:none;margin:0 auto;padding:.5rem 1.25rem;max-width:68rem;overflow-x:auto;scrollbar-width:none}
+  .topnav a{display:block;white-space:nowrap;padding:.4rem .75rem;border-radius:999px;color:var(--muted);text-decoration:none;font-size:.875rem}
+  .topnav a:hover{color:var(--ivory);background:var(--surface-2)}
+
+  /* Header */
+  header.hero{padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 1rem}
+  h1,h2,h3{font-family:var(--serif);line-height:1.2;text-wrap:balance}
+  h1{font-size:clamp(2.1rem,6vw,3.6rem);margin:0;font-weight:700}
+  h1 .sub{display:block;font-weight:500;font-style:italic;color:var(--gold);font-size:.62em;margin-top:.5rem}
+  .byline{margin:1.5rem 0 0;color:var(--muted);font-size:.9375rem}
+  .byline strong{color:var(--ivory);font-weight:600}
+  .rule{width:4rem;height:3px;background:var(--red);margin:1.75rem 0 0;border:0}
+
+  section{padding:3.5rem 0;border-bottom:1px solid var(--line)}
+  h2{font-size:clamp(1.6rem,4vw,2.25rem);margin:0 0 .5rem}
+  .lede{color:var(--muted);max-width:44rem;margin:0 0 2rem}
+  .prose{max-width:44rem}
+  .prose p{margin:0 0 1.1rem}
+  .lak{font-family:var(--serif);font-weight:700;color:var(--ivory)}
+
+  .callout{border-left:3px solid var(--red);background:var(--surface);padding:1rem 1.25rem;border-radius:0 var(--radius) var(--radius) 0;max-width:44rem;margin-top:1.5rem}
+  .steps{display:grid;gap:.75rem;margin:2rem 0 0;padding:0;list-style:none;counter-reset:s}
+  @media(min-width:720px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;font-size:.9375rem}
+  .steps li::before{content:counter(s);display:inline-grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--gold-soft);color:var(--gold);font-weight:600;font-size:.8125rem;margin-right:.5rem}
+
+  .pending{color:var(--muted);font-style:italic}
+
+  /* Comparison */
+  .cmp{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .cmp-head,.cmp-row{display:grid;grid-template-columns:1fr 1fr}
+  .cmp-head > div{padding:1.1rem 1rem;background:var(--surface-2)}
+  .cmp-head > div:first-child{display:none}
+  .cmp-head .who{font-family:var(--serif);font-size:1.2rem;font-weight:700}
+  .cmp-head .who-sub{color:var(--muted);font-size:.875rem}
+  .cmp-head .a{border-top:3px solid var(--gold)}
+  .cmp-head .b{border-top:3px solid var(--red)}
+  .cmp-photo{display:block;width:100%;max-width:15rem;padding:0;margin:0 0 .85rem;background:none;border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;color:var(--gold);font:500 .8125rem var(--sans);text-align:left}
+  .cmp-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;filter:grayscale(.15)}
+  .cmp-photo span{display:block;padding:.45rem .6rem;background:var(--bg)}
+  button.cmp-photo:hover{border-color:var(--gold)}
+  .cmp-row{border-top:1px solid var(--line)}
+  .cmp-row .label{grid-column:1/-1;padding:.75rem 1rem 0;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+  .cmp-row .cell{padding:.35rem 1rem .85rem;font-size:.9375rem}
+  .cmp-row .cell + .cell{border-left:1px solid var(--line)}
+  @media(min-width:720px){
+    .cmp-head,.cmp-row{grid-template-columns:13rem 1fr 1fr}
+    .cmp-head > div:first-child{display:block}
+    .cmp-row .label{grid-column:auto;padding:.9rem 1rem}
+    .cmp-row .cell{padding:.9rem 1rem;border-left:1px solid var(--line)}
+  }
+  .quick{display:grid;gap:.75rem;margin-top:1.25rem}
+  @media(min-width:720px){.quick{grid-template-columns:1fr 1fr}}
+  .quick div{background:var(--surface);border-radius:var(--radius);padding:.9rem 1.1rem;font-size:.9375rem;border:1px solid var(--line)}
+  .quick strong{color:var(--gold)}
+
+  /* Kinship */
+  .chart{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem 1rem;margin-bottom:1.5rem}
+  .chart h3{margin:0 0 .25rem;font-size:1.3rem}
+  .chart .chart-note{color:var(--muted);font-size:.875rem;margin:0 0 1.25rem}
+  .chart.small h3{font-size:1.1rem}
+  .tree{position:relative;display:flex;flex-direction:column;gap:3.5rem;padding:.5rem 0}
+  .tree svg{position:absolute;inset:0;pointer-events:none;overflow:visible}
+  .tree path{fill:none;stroke:var(--gold);stroke-width:1.5;opacity:.7}
+  .tree path.pending-line{stroke:var(--muted);stroke-dasharray:4 4;opacity:.5}
+  .tree-scroll{overflow-x:auto;margin:0 -1rem;padding:0 1rem}
+  .tree{width:max-content;min-width:100%}
+  .scroll-hint{font-size:.8125rem;color:var(--muted);margin:-.75rem 0 1rem}
+  @media(min-width:720px){.scroll-hint{display:none}}
+  .gen{display:flex;flex-wrap:nowrap;justify-content:center;gap:1rem 2.5rem;position:relative;z-index:1}
+  .node{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:.6rem .85rem;min-width:9rem;max-width:14rem;text-align:center}
+  .node .n{font-family:var(--serif);font-weight:700;line-height:1.25}
+  .node .alt{font-size:.8125rem;color:var(--gold)}
+  .node .d{font-size:.75rem;color:var(--muted);margin-top:.2rem}
+  .node.focus{border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft)}
+  .node.placeholder{border-style:dashed;background:transparent}
+  .node.placeholder .n{font-family:var(--sans);font-weight:400;font-style:italic;color:var(--muted);font-size:.875rem}
+  .badge{position:absolute;z-index:2;transform:translate(-50%,-50%);width:1.75rem;height:1.75rem;border-radius:50%;border:1px solid var(--gold);background:var(--bg);color:var(--gold);font:600 .75rem var(--sans);cursor:pointer;display:grid;place-items:center}
+  .badge:hover:not(:disabled){background:var(--gold);color:var(--bg)}
+  .badge:disabled{border-style:dashed;border-color:var(--muted);color:var(--muted);cursor:default}
+  .facts-heading{margin:1.25rem 0 .5rem}
+  .facts-heading + .rels{margin-top:0}
+  .rels{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem}
+  .rel{width:100%;display:grid;grid-template-columns:auto 1fr;gap:.25rem .75rem;align-items:center;text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:.7rem .9rem;color:var(--ivory);font:inherit;font-size:.9375rem;cursor:pointer}
+  @media(min-width:720px){.rel{grid-template-columns:auto 1fr auto}}
+  .rel:hover:not(:disabled){border-color:var(--gold)}
+  .rel:disabled{cursor:default}
+  .rel .num{width:1.6rem;height:1.6rem;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-size:.75rem;font-weight:600}
+  .rel:disabled .num{border-style:dashed;border-color:var(--muted);color:var(--muted)}
+  .rel .go{grid-column:2;font-size:.8125rem;color:var(--gold)}
+  @media(min-width:720px){.rel .go{grid-column:auto}}
+  .rel:disabled .go{color:var(--muted);font-style:italic}
+  .related{display:grid;gap:1.5rem}
+  @media(min-width:900px){.related{grid-template-columns:1fr 1fr}}
+  .related .chart{margin:0;min-width:0}
+
+  /* Claims */
+  .claims{display:grid;gap:1.25rem}
+  .claim{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .claim-top{padding:1.25rem 1.25rem 1rem;border-left:3px solid var(--red)}
+  .claim-k{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 .3rem}
+  .claim-text{font-family:var(--serif);font-size:1.15rem;margin:0}
+  .claim-body{display:grid;gap:1rem;padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--line)}
+  @media(min-width:720px){.claim-body{grid-template-columns:1fr 1.6fr auto;align-items:end}}
+  .claim-body p{margin:0;font-size:.9375rem}
+  .claim-body .says .claim-k{color:var(--gold)}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;border-radius:8px;border:1px solid transparent;padding:.6rem 1rem;font:500 .9375rem var(--sans);cursor:pointer;text-decoration:none;white-space:nowrap}
+  .btn-red{background:var(--red);color:var(--ivory)}
+  .btn-red:hover{background:var(--red-hover)}
+  .btn-ghost{background:transparent;color:var(--ivory);border-color:var(--line)}
+  .btn-ghost:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .btn-sm{padding:.4rem .7rem;font-size:.8125rem}
+
+  /* Reader */
+  .reader{display:grid;gap:1.25rem}
+  @media(min-width:900px){.reader{grid-template-columns:1.7fr 1fr;align-items:start}}
+  .reader-bar{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;margin-bottom:1rem}
+  .reader-bar label{font-size:.8125rem;color:var(--muted);display:block;margin-bottom:.25rem}
+  select{background:var(--surface-2);color:var(--ivory);border:1px solid var(--line);border-radius:8px;padding:.55rem .75rem;font:inherit;font-size:.9375rem;max-width:100%}
+  .book{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1rem;perspective:1600px}
+  .viewport{height:min(70vh,640px);overflow:auto;border-radius:6px;background:#121110;display:flex}
+  .sheet{margin:auto;transform-origin:left center;width:100%;max-width:100%;transition:width .2s}
+  .sheet img{display:block;width:100%;height:auto;background:var(--paper)}
+  .sheet.flip-next{animation:flipNext .45s ease-out}
+  .sheet.flip-prev{animation:flipPrev .45s ease-out;transform-origin:right center}
+  @keyframes flipNext{from{transform:rotateY(-70deg);opacity:.2}to{transform:none;opacity:1}}
+  @keyframes flipPrev{from{transform:rotateY(70deg);opacity:.2}to{transform:none;opacity:1}}
+  .blank{aspect-ratio:3/4;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;gap:.5rem;background-image:repeating-linear-gradient(transparent 0 27px,rgba(42,38,34,.08) 27px 28px)}
+  .blank strong{font-family:var(--serif);font-size:1.25rem}
+  .blank span{font-size:.875rem;opacity:.75}
+  .controls{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;justify-content:space-between;margin-top:.9rem}
+  .controls .grp{display:flex;gap:.4rem;align-items:center}
+  .pg{font-size:.875rem;color:var(--muted);min-width:6.5rem;text-align:center}
+  .zoomv{font-size:.8125rem;color:var(--muted);min-width:3rem;text-align:center}
+  .thumbs{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.9rem}
+  .thumbs button{min-width:2.2rem;height:2.2rem;border-radius:6px;border:1px solid var(--line);background:var(--surface-2);color:var(--muted);font:500 .8125rem var(--sans);cursor:pointer}
+  .thumbs button[aria-current="true"]{border-color:var(--gold);color:var(--gold);background:var(--gold-soft)}
+  .figcap{font-size:.8125rem;color:var(--muted);margin:.75rem 0 0}
+
+  aside.notes{display:grid;gap:1rem}
+  .note{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.2rem}
+  .note h3{font-family:var(--sans);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 .5rem;font-weight:600}
+  .note.look{border-left:3px solid var(--gold)}
+  .note p{margin:0;font-size:.9375rem}
+  .note .rtitle{font-family:var(--serif);font-size:1.15rem;margin:0 0 .25rem}
+  .share-row{display:flex;gap:.5rem;margin-top:.5rem}
+  .share-row input{flex:1;min-width:0;background:var(--bg);color:var(--ivory);border:1px solid var(--line);border-radius:8px;padding:.5rem .65rem;font:.8125rem var(--sans)}
+  .status{font-size:.8125rem;color:var(--gold);min-height:1.2em;margin:.4rem 0 0}
+
+  footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.875rem}
+  footer .credit{color:var(--ivory)}
+  footer .row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+
+  dialog{background:var(--surface);color:var(--ivory);border:1px solid var(--line);border-radius:var(--radius);width:min(56rem,94vw);padding:0}
+  dialog::backdrop{background:rgba(0,0,0,.7)}
+  .dlg-h{padding:1rem 1.25rem;border-bottom:1px solid var(--line)}
+  .dlg-h h2{font-size:1.25rem;margin:0}
+  .dlg-h p{margin:.25rem 0 0;font-size:.875rem;color:var(--muted)}
+  .dlg-b{padding:1rem 1.25rem}
+  dialog textarea{width:100%;height:52vh;background:var(--bg);color:var(--ivory);border:1px solid var(--line);border-radius:8px;padding:.75rem;font:.8125rem/1.5 ui-monospace,Menlo,monospace}
+  .dlg-f{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:flex-end;padding:0 1.25rem 1.25rem}
+  .err{color:#e58a80;font-size:.875rem;min-height:1.2em;margin:.5rem 0 0}
+  .family-jump{display:flex;flex-wrap:wrap;gap:.55rem 1rem;margin:1rem 0}
+  .chart[id], .family-profile, .family-group{scroll-margin-top:5rem}
+  .family-profile{margin:2rem 0}
+  .family-group > h3{font-size:1.5rem;margin:1.5rem 0 .75rem}
+  .family-group{grid-column:1 / -1;min-width:0;padding:1.5rem 0}
+  .family-group > .related{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}
+  @media print{
+    @page{size:letter;margin:0.65in}
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f5f2eb;--ivory:#201d19;--muted:#494239;--gold:#69451c;--line:#bfb7a9}
+    body{background:#fff;color:var(--ivory);font-size:11pt;line-height:1.45}
+    .wrap{max-width:none;padding:0}
+    .topnav,.skip,.steps,.family-jump,.scroll-hint,.tree-scroll,#reader,#edit-open,dialog,.cmp-photo span,.claim .btn{display:none!important}
+    header.hero,section,.family-group,footer{padding:0.75rem 0}
+    h1{font-size:29pt}
+    h2,h3{break-after:avoid}
+    p{orphans:3;widows:3}
+    .cmp-row,.cmp-head,.claim,.rels li{break-inside:avoid}
+    .cmp-photo img{max-height:2in;object-fit:contain}
+    .related,.family-group > .related{display:block}
+    .related .chart,.chart{margin:0 0 1rem;padding:.7rem;background:#fff}
+    .rels{list-style:disc;display:block;padding-left:1.1rem;margin:.4rem 0}
+    .rel,.rel:disabled{display:block;border:0;padding:.12rem 0;background:transparent;color:var(--ivory);font-size:10.5pt}
+    .rel .num{display:inline;margin-right:.45em;border:0}
+    .rel .go{display:inline;margin-left:.45em}
+    .rels{list-style:none;padding-left:0}
+    .family-profile{margin:.65rem 0}
+  }
+  .descent-table-wrap{overflow-x:auto;margin:1rem 0 2rem}
+  .descent-table{width:100%;min-width:44rem;border-collapse:collapse;font-size:.9rem;line-height:1.45}
+  .descent-table th,.descent-table td{border:1px solid var(--line);padding:.65rem .75rem;text-align:left;vertical-align:top}
+  .descent-table th{background:var(--surface-2)}
+  .descent-table thead th{color:var(--gold)}
+  @media print{
+    .descent-table-wrap{overflow:visible}
+    .descent-table{min-width:0;font-size:9pt}
+    .descent-table tr{break-inside:avoid}
+    .descent-table thead{display:table-header-group}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="topnav" aria-label="Sections">
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#compare">Which person?</a></li>
+    <li><a href="#direct-line">Direct descent</a></li>
+    <li><a href="#kinship">Lakota kinship clusters</a></li>
+    <li><a href="#claims">Public claims</a></li>
+    <li><a href="#reader">Read the records</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">A guide to the documentary record</p>
+    <h1>Who Was Chief Spotted Elk?<span class="sub">What the Records Show</span></h1>
+    <p class="byline">Family research and interpretation by <strong data-bind="credit"></strong></p>
+    <hr class="rule">
+  </div>
+</header>
+
+<main id="main">
+  <section id="intro" aria-label="Introduction">
+    <div class="wrap">
+      <div class="prose">
+        <p><span class="lak">Ōpȟáŋ Glešká</span>, known in English as <strong>Chief Spotted Elk</strong>, was a Minneconjou leader. He was killed at Wounded Knee in 1890.</p>
+        <p>Historical records also use the name <strong>Big Foot</strong> for an Oglala man. That is a different person. When two people show up in the records under the same English name, it's easy to mix them up.</p>
+        <p>This page puts the records side by side, so you can see which person each document is about, who his documented relatives are, and how public claims compare with the records.</p>
+        <p>This site is a work in progress. I update it as time allows. If you have information or documents to contribute, please send them to Michelle Wilder - Spotted Elk Tiwahe.</p>
+      </div>
+      <ol class="steps">
+        <li>Use the comparison to work out which person a record is about.</li>
+        <li>Explore Chief Spotted Elk’s direct line and the Lakota kinship clusters.</li>
+        <li>Compare each public claim with the original scan.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="compare" aria-labelledby="compare-h">
+    <div class="wrap">
+      <h2 id="compare-h">Which person does a record mean?</h2>
+      <p class="lede">The two people side by side. Check a record's details against each column to see which person it's about.</p>
+      <div class="cmp" id="cmp" role="table" aria-label="Comparison of Ōpȟáŋ Glešká and the Oglala man named Big Foot"></div>
+      <div class="quick" id="quick"></div>
+    </div>
+  </section>
+
+  <section id="direct-line" aria-labelledby="direct-line-h">
+    <div class="wrap">
+      <h2 id="direct-line-h">Chief Spotted Elk’s direct line of descent</h2>
+      <p class="lede">Follow the parent–child line from Ōpȟáŋ Glešká (Chief Spotted Elk) through Richard “Dick” Spotted Elk. Spouses and other relatives appear alongside that line, with their relationships labeled.</p>
+      <div id="main-chart"></div>
+    </div>
+  </section>
+
+  <section id="kinship" aria-labelledby="kin-h">
+    <div class="wrap">
+      <h2 id="kin-h">Lakota Kinship Clusters and Public Claims of Descent from Chief Spotted Elk</h2>
+      <p class="lede">These charts trace relationships within and among families named in the records, including the Pipe on Head, Mousseau, He Crow, High Hawk, Little Finger, and Blue Legs families. The charts show marriages, stepfamily ties, shared households, and other relationships. Being included here does not establish direct descent from Chief Spotted Elk. The public claims section explains what the records support and which links still need evidence.</p>
+      <nav class="family-jump" aria-label="Jump to a family section">
+        <a href="#family-blue-legs">Blue Legs family</a>
+        <a href="#family-high-hawk">High Hawk family</a>
+        <a href="#family-little-finger">Little Finger / Horse Woman family</a>
+        <a href="#family-he-crow">He Crow family</a>
+        <a href="#family-medicine-woman">Mousseau family</a>
+        <a href="#profile-james-pipe-on-head">James Pipe on Head</a>
+      </nav>
+      <h3>Primary Source Documentary Evidence</h3>
+      <div class="descent-table-wrap" role="region" aria-label="Kinship and descent comparison" tabindex="0">
+        <table class="descent-table">
+          <caption class="sr-only">Evidence summary by family line</caption>
+          <thead><tr><th scope="col">Family / Line</th><th scope="col">Sources Reviewed</th><th scope="col">Direct Descent from Chief Spotted Elk</th><th scope="col">Historical Reading</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Spotted Elk surname lines</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Richard (“Dick”) Spotted Elk line</th><td>Probate and continuity records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Weasel Bear line</th><td>Interagency correspondence, history card, probate records, and oral history</td><td>Collateral family connection documented</td><td>Closely related branch</td></tr>
+            <tr><th scope="row">Richard line</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Garnier line</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Running Eagle line</th><td>Research in progress</td><td>Research in progress</td><td>Closely related branch</td></tr>
+            <tr><th scope="row">He Crow line</th><td>Probate records, census records, and marriage timeline</td><td>Direct descent has not been established in the records reviewed</td><td>Independent line with later marital ties</td></tr>
+            <tr><th scope="row">Pipe On Head / Lone Man / Broken Nose line</th><td>Probate records, testimony, documentary and radio interviews, U.S. Park Service interviews, and Congressional Record attribution</td><td>Direct descent has not been established in the records reviewed; primary sources conflict with the public attribution</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships. The claimed direct link requires specific evidence.</td></tr>
+            <tr><th scope="row">W High Hawk line</th><td>Probate testimony and records</td><td>Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
+            <tr><th scope="row">Little Finger line</th><td>Probate records, census records, documentary and radio interviews, and U.S. Park Service interviews</td><td>Direct descent has not been established in the records reviewed</td><td>Independent documented line</td></tr>
+            <tr><th scope="row">Star Comes Out line</th><td>Marriage records and family ties</td><td>Direct descent has not been established in the records reviewed</td><td>Connection to the He Crow line</td></tr>
+            <tr><th scope="row">Mousseau line</th><td>Probate review in progress</td><td>Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="family-profiles"></div>
+      <div class="related" id="related-charts"></div>
+    </div>
+  </section>
+
+  <section id="claims" aria-labelledby="claims-h">
+    <div class="wrap">
+      <h2 id="claims-h">Public claims and what the records show</h2>
+      <p class="lede">Statements that have been made in public, each set next to what the original record actually says.</p>
+      <div class="claims" id="claims-list"></div>
+    </div>
+  </section>
+
+  <section id="reader" aria-labelledby="reader-h">
+    <div class="wrap">
+      <h2 id="reader-h">Read the records</h2>
+      <p class="lede">Turn the pages, zoom in on details and copy a link to any page. Use the left and right arrow keys to turn pages.</p>
+      <div class="reader-bar">
+        <div>
+          <label for="rec-select">Record</label>
+          <select id="rec-select"></select>
+        </div>
+      </div>
+      <div class="reader">
+        <div class="book" id="book" tabindex="0" aria-roledescription="document reader" aria-label="Record pages">
+          <div class="viewport" id="viewport"><div class="sheet" id="sheet"></div></div>
+          <div class="controls">
+            <div class="grp">
+              <button class="btn btn-ghost btn-sm" id="prev" aria-label="Previous page">← Prev</button>
+              <span class="pg" id="pg" aria-live="polite"></span>
+              <button class="btn btn-ghost btn-sm" id="next" aria-label="Next page">Next →</button>
+            </div>
+            <div class="grp" role="group" aria-label="Zoom">
+              <button class="btn btn-ghost btn-sm" id="zout" aria-label="Zoom out">−</button>
+              <span class="zoomv" id="zv">100%</span>
+              <button class="btn btn-ghost btn-sm" id="zin" aria-label="Zoom in">+</button>
+              <button class="btn btn-ghost btn-sm" id="zreset">Fit</button>
+            </div>
+          </div>
+          <div class="thumbs" id="thumbs" role="group" aria-label="Jump to page"></div>
+          <p class="figcap" id="figcap"></p>
+        </div>
+        <aside class="notes" aria-label="About this page">
+          <div class="note">
+            <p class="rtitle" id="r-title"></p>
+            <p class="pending" id="r-pagecap" style="font-size:.875rem"></p>
+          </div>
+          <div class="note look">
+            <h3>What to look for</h3>
+            <p id="r-look"></p>
+          </div>
+          <div class="note">
+            <h3>Archival citation</h3>
+            <p id="r-cite"></p>
+          </div>
+          <div class="note">
+            <h3>Source credit</h3>
+            <p id="r-credit"></p>
+          </div>
+          <div class="note">
+            <h3>Link to this page</h3>
+            <div class="share-row">
+              <label for="share-url" class="sr-only">Link to this record page</label>
+              <input id="share-url" readonly>
+              <button class="btn btn-red btn-sm" id="copy">Copy</button>
+            </div>
+            <p class="status" id="copy-status" role="status"></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <p style="margin:0">Family research and interpretation: <span class="credit" data-bind="credit"></span>.<br>All research © 2008–2026 Spotted Elk Tiospaye. Archival materials are credited to their respective archives.</p>
+    <button class="btn btn-ghost btn-sm" id="edit-open">Edit content</button>
+  </div>
+</footer>
+
+<dialog id="editor" aria-labelledby="ed-h">
+  <div class="dlg-h">
+    <h2 id="ed-h">Edit names, relationships, claims and records</h2>
+    <p>Edit the content below, then click Apply to preview it. Use Download page to save a copy of the site with your changes built in.</p>
+  </div>
+  <div class="dlg-b">
+    <label for="ed-text" class="sr-only">Site content (JSON)</label>
+    <textarea id="ed-text" spellcheck="false"></textarea>
+    <p class="err" id="ed-err" role="alert"></p>
+  </div>
+  <div class="dlg-f">
+    <button class="btn btn-ghost" id="ed-close">Close</button>
+    <button class="btn btn-ghost" id="ed-json">Download data</button>
+    <button class="btn btn-ghost" id="ed-page">Download page</button>
+    <button class="btn btn-red" id="ed-apply">Apply</button>
+  </div>
+</dialog>
+
+<!--
+  EDITABLE CONTENT
+  All names, relationships, claims and records come from this block.
+  • Entries marked "placeholder": true are empty slots. Replace them with supplied material or delete them.
+  • A relationship reads: [from] [label] [to], e.g. "is the son of".
+  • Link a relationship or claim to a scan with "record": "<record id>" and "page": <page number>.
+  • Each page can have its own "citation" and "credit"; if left out, the record-level values are used.
+  • "src" is an image path relative to this file, e.g. "./scans/census-1890-p1.jpg".
+-->
+<script type="application/json" id="site-data">
+{
+  "credit": "Michelle Wilder - Spotted Elk Tiwahe",
+  "comparison": {
+    "columns": [
+      {
+        "name": "Ōpȟáŋ Glešká",
+        "sub": "Chief Spotted Elk",
+        "photo": "./img/chief-spotted-elk.png",
+        "photoAlt": "Sepia portrait of an older man with long hair, a dark brimmed hat, a checked jacket and vest and a light neckerchief, holding a long pipe across his lap",
+        "photoRecord": "photographs",
+        "photoPage": 1
+      },
+      {
+        "name": "Big Foot",
+        "sub": "Oglala man",
+        "photo": "./img/si-tanka-big-foot.png",
+        "photoAlt": "Black-and-white studio portrait of a younger man with long braids, a light shirt and a neckerchief, seated with one hand on his lap",
+        "photoRecord": "photographs",
+        "photoPage": 2
+      }
+    ],
+    "rows": [
+      {
+        "label": "Oyate / band",
+        "a": "Minneconjou",
+        "b": "Oglala"
+      },
+      {
+        "label": "Names used in records",
+        "a": "Ōpȟáŋ Glešká; Spotted Elk",
+        "b": "Big Foot"
+      },
+      {
+        "label": "Role",
+        "a": "Minneconjou leader",
+        "b": "Oglala Headman"
+      },
+      {
+        "label": "Key documented event",
+        "a": "Killed at Wounded Knee, 1890",
+        "b": "Spoke with Richard “Dick” Spotted Elk in council after Wounded Knee. Died circa 1899. Buried in Kyle, South Dakota."
+      },
+      {
+        "label": "Treaty signer",
+        "a": "Chief Spotted Elk signed the 1868 Treaty of Fort Laramie alongside his father, Chief Lone Horn, and his nephew, She Elk Voice Walking.",
+        "b": "To be supplied"
+      },
+      {
+        "label": "Dates in records",
+        "a": "To be supplied",
+        "b": "1892"
+      },
+      {
+        "label": "Records that help identify him",
+        "a": "Photographs taken before and after his death, the 1868 Treaty of Fort Laramie, and census records.",
+        "b": "Records of the Oglala delegation to Washington, D.C., photographs of Big Foot and his wife at Yale’s Beinecke Library, and the Black Hills council meeting record in which his son identifies Big Foot as his father. He Dog also names Big Foot."
+      },
+      {
+        "label": "Where he and his family are buried",
+        "a": "Chief Spotted Elk is buried in the mass grave at Wounded Knee.",
+        "b": "Kyle"
+      },
+      {
+        "label": "Wife",
+        "a": "Bear Don't Smell Like Fire",
+        "b": "White Horse Owner (a White Hawk)"
+      },
+      {
+        "label": "Sons",
+        "a": "She Elk Voice Walking; Richard \"Dick\" Spotted Elk; John Weasel Bear",
+        "b": "Plenty Bear; John Six Feathers"
+      },
+      {
+        "label": "Relatives named in records",
+        "a": "See the kinship chart below",
+        "b": "See \"The Oglala Big Foot's family\" chart below"
+      }
+    ],
+    "quick": [
+      {
+        "if": "The record identifies him as Minneconjou",
+        "then": "it most likely refers to Ōpȟáŋ Glešká (Chief Spotted Elk)."
+      },
+      {
+        "if": "The record identifies him as Oglala",
+        "then": "it most likely refers to the Oglala man named Big Foot."
+      }
+    ]
+  },
+  "people": {
+    "black-buffalo": {
+      "name": "Chief Black Buffalo"
+    },
+    "lone-horn": {
+      "name": "Chief Lone Horn",
+      "detail": "Treaty signer"
+    },
+    "opan-gleska": {
+      "name": "Ōpȟáŋ Glešká",
+      "alt": "Chief Spotted Elk",
+      "detail": "Minneconjou leader · killed at Wounded Knee, 1890"
+    },
+    "bear-dont-smell": {
+      "name": "Bear Don't Smell Like Fire"
+    },
+    "she-elk-voice": {
+      "name": "She Elk Voice Walking",
+      "detail": "Named for his uncle"
+    },
+    "dick-spotted-elk": {
+      "name": "Richard \"Dick\" Spotted Elk"
+    },
+    "john-weasel-bear": {
+      "name": "John Weasel Bear"
+    },
+    "jasper-sr": {
+      "name": "Jasper Spotted Elk Sr."
+    },
+    "annie": {
+      "name": "Annie"
+    },
+    "jasper-jr": {
+      "name": "Jasper Spotted Elk Jr."
+    },
+    "calvin": {
+      "name": "Calvin Spotted Elk"
+    },
+    "richard": {
+      "name": "Richard Spotted Elk",
+      "detail": "Died before Jasper Spotted Elk Jr."
+    },
+    "lily": {
+      "name": "Lily Spotted Elk"
+    },
+    "touch-the-cloud": {
+      "name": "Touch the Cloud"
+    },
+    "roman-nose": {
+      "name": "Roman Nose"
+    },
+    "hump": {
+      "name": "Hump"
+    },
+    "crazy-horse": {
+      "name": "Crazy Horse"
+    },
+    "big-foot-oglala": {
+      "name": "Big Foot",
+      "alt": "Ste SiTanka · Oglala",
+      "detail": "1832–1899 in the family tree · buried in Kyle"
+    },
+    "white-horse-owner": {
+      "name": "White Horse Owner",
+      "detail": "1832–1914 in the family tree · buried in Kyle"
+    },
+    "plenty-bear": {
+      "name": "Plenty Bear",
+      "detail": "1852–1926 in the family tree · buried in Kyle"
+    },
+    "john-six-feathers": {
+      "name": "John Six Feathers",
+      "detail": "Buried in Kyle"
+    },
+    "confiscated-bow": {
+      "name": "Confiscated Bow"
+    },
+    "saves-life": {
+      "name": "Saves Life"
+    },
+    "george-blue-leg": {
+      "name": "George Blue Leg"
+    },
+    "thomas-blue-leg": {
+      "name": "Thomas Blue Leg"
+    },
+    "yellow-horse": {
+      "name": "Yellow Horse",
+      "detail": "Brulé · died 1886, four years before Wounded Knee"
+    },
+    "mary-horse-woman": {
+      "name": "Mary Horse Woman",
+      "detail": "Described as a Crow woman"
+    },
+    "black-eagle": {
+      "name": "Black Eagle No. 1",
+      "detail": "Minneconjou"
+    },
+    "john-little-finger": {
+      "name": "John Little Finger"
+    },
+    "grace-black-eagle": {
+      "name": "Grace Black Eagle"
+    },
+    "justin-black-eagle": {
+      "name": "Justin Black Eagle"
+    },
+    "turtle-bear": {
+      "name": "Turtle Bear",
+      "alt": "also called Hungry",
+      "detail": "Also known as Bear Sheds His Hair or Shedding Bear (the elder)"
+    },
+    "lucinda-pipe-on-head": {
+      "name": "Lucinda Pipe on Head"
+    },
+    "he-crow": {
+      "name": "He Crow",
+      "detail": "Oglala · killed at Wounded Knee, 1890"
+    },
+    "medicine-woman-mousseau": {
+      "name": "Medicine Woman Mousseau",
+      "detail": "Born about 1857, according to the family profile"
+    },
+    "william-high-hawk": {
+      "name": "William High Hawk",
+      "alt": "William Moses High Hawk #1"
+    },
+    "shedding-bear-younger": {
+      "name": "Shedding Bear",
+      "alt": "the younger",
+      "detail": "Killed at Wounded Knee, 1890, with his brother"
+    },
+    "straw-woman": {
+      "name": "Straw Woman"
+    },
+    "frog": {
+      "name": "Frog"
+    },
+    "julia": {
+      "name": "Julia"
+    },
+    "michelle": {
+      "name": "Michelle"
+    },
+    "she-elk-voice-treaty-signer": {
+      "name": "She Elk Voice Walking",
+      "detail": "Chief Spotted Elk’s nephew · treaty signer"
+    },
+    "nancy-little-white-man": {
+      "name": "Nancy Little White Man"
+    },
+    "mary-black-eagle-daughter": {
+      "name": "Unnamed daughter"
+    },
+    "wallace-little-finger": {
+      "name": "Wallace Little Finger",
+      "alt": "Also known as Yellow Horse"
+    },
+    "leonard-little-finger": {
+      "name": "Leonard Little Finger"
+    },
+    "cherry-eye": {
+      "name": "Cherry Eye"
+    },
+    "thomas-plenty-bear": {
+      "name": "Thomas Plenty Bear"
+    },
+    "medicine-track": {
+      "name": "Medicine Track"
+    },
+    "julia-child-of-plenty-bear": {
+      "name": "Julia"
+    },
+    "josephine-blue-legs": {
+      "name": "Josephine Blue Legs",
+      "detail": "Listed as George’s sister in the family tree"
+    },
+    "jennie-fox-belly": {
+      "name": "Jennie Fox Belly"
+    },
+    "freda-blue-legs": {
+      "name": "Freda Blue Legs"
+    },
+    "edna-a-blue-legs": {
+      "name": "Edna A Blue Legs"
+    },
+    "amenia-blue-legs": {
+      "name": "Amenia Blue Legs"
+    },
+    "bert-blue-legs": {
+      "name": "Bert Blue Legs"
+    },
+    "vesta-blue-legs": {
+      "name": "Vesta Blue Legs"
+    },
+    "gladys-blue-legs": {
+      "name": "Gladys Blue Legs"
+    },
+    "percy-n-blue-legs": {
+      "name": "Percy N Blue Legs"
+    },
+    "afraid-of-bull": {
+      "name": "Louisa Afraid of Bull",
+      "detail": "Brulé · survived Wounded Knee"
+    },
+    "jackson-he-crow": {
+      "name": "Jackson He Crow",
+      "detail": "Survived Wounded Knee"
+    },
+    "john-lone-man": {
+      "name": "John Lone Man"
+    },
+    "pipe-on-head-stepfather": {
+      "name": "Pipe on Head"
+    },
+    "james-pipe-on-head": {
+      "name": "James Pipe on Head",
+      "alt": "Also recorded as Big Foot / Sitanka"
+    },
+    "mary-pipe-on-head": {
+      "name": "Mary Pipe on Head"
+    },
+    "norman-pipe-on-head": {
+      "name": "Norman Pipe on Head"
+    },
+    "robert-pipe-on-head": {
+      "name": "Robert Pipe on Head"
+    },
+    "agnes-pipe-on-head": {
+      "name": "Agnes Pipe on Head"
+    },
+    "susie-pipe-on-head": {
+      "name": "Susie Pipe on Head"
+    },
+    "arlene-pipe-on-head": {
+      "name": "Arlene Pipe on Head Belt"
+    },
+    "mercy-pipe-on-head": {
+      "name": "Mercy Pipe on Head Long Wolf Ten Fingers"
+    },
+    "flossie-pipe-on-head": {
+      "name": "Flossie Pipe on Head Bear Robe"
+    },
+    "virginia-pipe-on-head": {
+      "name": "Virginia Pipe on Head"
+    },
+    "coyote-woman": {
+      "name": "Coyote Woman"
+    },
+    "looking-cloud": {
+      "name": "Looking Cloud"
+    },
+    "four-tracks": {
+      "name": "Four Tracks"
+    },
+    "black-elk-high-hawk": {
+      "name": "Black Elk"
+    },
+    "long-bull-son-high-hawk": {
+      "name": "Long Bull (William’s son)"
+    },
+    "eagle-woman-high-hawk": {
+      "name": "Eagle Woman"
+    },
+    "good-horse-high-hawk": {
+      "name": "Good Horse"
+    },
+    "young-white-cow-high-hawk": {
+      "name": "Young White Cow"
+    },
+    "nancy-high-hawk": {
+      "name": "Nancy High Hawk"
+    },
+    "fannie-high-hawk": {
+      "name": "Fannie Whirlwind High Hawk"
+    },
+    "moses-bird-necklace-high-hawk": {
+      "name": "Moses Bird Necklace High Hawk"
+    },
+    "moses-high-hawk": {
+      "name": "Moses High Hawk"
+    },
+    "daniel-high-hawk": {
+      "name": "Daniel High Hawk"
+    },
+    "annie-high-hawk": {
+      "name": "Annie High Hawk"
+    },
+    "young-wolf-ears": {
+      "name": "Young Wolf Ears"
+    },
+    "annie-young-wolf-ears": {
+      "name": "Annie Young Wolf Ears"
+    },
+    "george-young-wolf-ears": {
+      "name": "George Young Wolf Ears"
+    },
+    "alexander-mousseau": {
+      "name": "Alexander Mousseau"
+    },
+    "julia-mousseau": {
+      "name": "Julia Mousseau"
+    },
+    "sophia-mousseau": {
+      "name": "Sophia Mousseau"
+    },
+    "agnes-mousseau": {
+      "name": "Agnes Mousseau"
+    },
+    "susan-black-bear": {
+      "name": "Susan Black Bear"
+    },
+    "mary-mousseau": {
+      "name": "Mary Mousseau"
+    },
+    "lucy-mousseau": {
+      "name": "Lucy Mousseau"
+    },
+    "jennie-mousseau": {
+      "name": "Jennie Mousseau"
+    }
+  },
+  "mainChart": {
+    "title": "The documented family line",
+    "note": "Generations run from top (oldest) to bottom.",
+    "focus": "opan-gleska",
+    "generations": [
+      [
+        "black-buffalo"
+      ],
+      [
+        "lone-horn"
+      ],
+      [
+        "opan-gleska",
+        "bear-dont-smell"
+      ],
+      [
+        "she-elk-voice",
+        "dick-spotted-elk",
+        "john-weasel-bear"
+      ],
+      [
+        "jasper-sr",
+        "annie"
+      ],
+      [
+        "jasper-jr",
+        "julia"
+      ],
+      [
+        "michelle",
+        "calvin",
+        "richard"
+      ],
+      [
+        "lily"
+      ]
+    ],
+    "links": [
+      {
+        "from": "lone-horn",
+        "label": "is the son of",
+        "to": "black-buffalo",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "opan-gleska",
+        "label": "is the son of",
+        "to": "lone-horn",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "bear-dont-smell",
+        "label": "is the wife of",
+        "to": "opan-gleska",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "she-elk-voice",
+        "label": "is the son of",
+        "to": "opan-gleska",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "dick-spotted-elk",
+        "label": "is the son of",
+        "to": "opan-gleska",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "john-weasel-bear",
+        "label": "is the son of",
+        "to": "opan-gleska",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "jasper-sr",
+        "label": "is the son of",
+        "to": "dick-spotted-elk",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "annie",
+        "label": "is the wife of",
+        "to": "jasper-sr",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "jasper-jr",
+        "label": "is the son of",
+        "to": "jasper-sr",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "label": "is the wife of",
+        "to": "jasper-jr",
+        "record": null,
+        "page": 1,
+        "from": "julia",
+        "source": "Family tree"
+      },
+      {
+        "from": "calvin",
+        "label": "is the son of",
+        "to": "jasper-jr",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "julia",
+        "label": "is the mother of",
+        "to": "calvin",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "julia",
+        "label": "is the mother of",
+        "to": "richard",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "richard",
+        "label": "is the brother of",
+        "to": "calvin",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "lily",
+        "label": "is the daughter of",
+        "to": "calvin",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      },
+      {
+        "from": "lily",
+        "label": "is the daughter of",
+        "to": "michelle",
+        "record": null,
+        "page": 1,
+        "source": "Family tree"
+      }
+    ]
+  },
+  "relatedCharts": [
+    {
+      "title": "Treaty signers at Fort Laramie",
+      "note": "Chief Spotted Elk signed the 1868 Treaty of Fort Laramie alongside his father, Chief Lone Horn, and his nephew, She Elk Voice Walking.",
+      "focus": "opan-gleska",
+      "generations": [
+        [
+          "lone-horn"
+        ],
+        [
+          "opan-gleska"
+        ],
+        [
+          "she-elk-voice-treaty-signer"
+        ]
+      ],
+      "links": [
+        {
+          "from": "opan-gleska",
+          "label": "is the son of",
+          "to": "lone-horn",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "she-elk-voice-treaty-signer",
+          "label": "is the nephew of",
+          "to": "opan-gleska",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "lone-horn",
+          "label": "signed the treaty alongside",
+          "to": "she-elk-voice-treaty-signer",
+          "record": null,
+          "page": 1,
+          "source": "1868 Fort Laramie Treaty"
+        }
+      ],
+      "source": "Treaty of Fort Laramie, 1868, Minneconjou signers section. The treaty lists Spotted Elk as Oh-pong-ge-le-skah."
+    },
+    {
+      "title": "His brothers",
+      "note": "Shown below him only to keep the lines readable. They are the same generation.",
+      "focus": "opan-gleska",
+      "generations": [
+        [
+          "opan-gleska"
+        ],
+        [
+          "touch-the-cloud",
+          "roman-nose",
+          "hump",
+          "frog"
+        ]
+      ],
+      "links": [
+        {
+          "from": "touch-the-cloud",
+          "label": "is the brother of",
+          "to": "opan-gleska",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "roman-nose",
+          "label": "is the brother of",
+          "to": "opan-gleska",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "hump",
+          "label": "is the brother of",
+          "to": "opan-gleska",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "frog",
+          "label": "is the brother of",
+          "to": "opan-gleska",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ]
+    },
+    {
+      "title": "His cousin",
+      "note": "Which parents connect them: to be supplied.",
+      "focus": "opan-gleska",
+      "generations": [
+        [
+          "opan-gleska",
+          "crazy-horse"
+        ]
+      ],
+      "links": [
+        {
+          "from": "crazy-horse",
+          "label": "is the first cousin of",
+          "to": "opan-gleska",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ]
+    },
+    {
+      "title": "The Oglala Big Foot's family",
+      "note": "Big Foot, White Horse Owner, Plenty Bear, and John Six Feathers are buried in Kyle. The Oglala Bigfoot Family Tree lists Cherry Eye as Plenty Bear’s spouse and Thomas Plenty Bear, Medicine Track, and Julia as his children.",
+      "focus": "big-foot-oglala",
+      "generations": [
+        [
+          "big-foot-oglala",
+          "white-horse-owner"
+        ],
+        [
+          "cherry-eye",
+          "plenty-bear",
+          "john-six-feathers"
+        ],
+        [
+          "thomas-plenty-bear",
+          "medicine-track",
+          "julia-child-of-plenty-bear"
+        ]
+      ],
+      "links": [
+        {
+          "from": "white-horse-owner",
+          "label": "is the wife of",
+          "to": "big-foot-oglala",
+          "record": null,
+          "page": 1,
+          "source": "Census records and family tree"
+        },
+        {
+          "from": "plenty-bear",
+          "label": "is the son of",
+          "to": "big-foot-oglala",
+          "record": null,
+          "page": 1,
+          "source": "Census records and family tree"
+        },
+        {
+          "from": "john-six-feathers",
+          "label": "is the son of",
+          "to": "big-foot-oglala",
+          "record": null,
+          "page": 1,
+          "source": "Census records and family tree"
+        },
+        {
+          "from": "plenty-bear",
+          "to": "white-horse-owner",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Census records and family tree"
+        },
+        {
+          "from": "cherry-eye",
+          "to": "plenty-bear",
+          "label": "is the spouse of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "thomas-plenty-bear",
+          "to": "plenty-bear",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "medicine-track",
+          "to": "plenty-bear",
+          "label": "is the daughter of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "julia-child-of-plenty-bear",
+          "to": "plenty-bear",
+          "label": "is the daughter of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "source": "Pine Ridge Agency Indian Census Rolls, 1896–1899, National Archives microfilm publication M595, roll 367. Household page and image number pending. Oglala Bigfoot Family Tree, supplied screenshot, Plenty Bear profile (family-tree dates and the spouse and children listed for Plenty Bear)."
+    },
+    {
+      "title": "The Blue Leg siblings",
+      "note": "As a leader, Spotted Elk had many orphans and widows traveling or staying in his camp. George and Thomas Blue Leg were among the boys later described as orphans. Their own parents are named in the records. They were not children of Spotted Elk. The family tree lists George Blue Legs (1884–1955) with siblings Josephine and Thomas Blue Legs and half-siblings N Little White Man, J Black Whistler, and Wood. It gives Saves Life’s dates as 1854–1906 and lists her parents as Heart Man and Holy Land Tribe. The tree names George’s father as Blue Legs (born 1856), with Plenty Stars (born 1832) and D Moon & Something (born 1837) as his parents. The relationship between the names Blue Legs and Confiscated Bow needs to be checked against the records.",
+      "generations": [
+        [
+          "confiscated-bow",
+          "saves-life"
+        ],
+        [
+          "george-blue-leg",
+          "thomas-blue-leg",
+          "josephine-blue-legs",
+          "nancy-little-white-man"
+        ]
+      ],
+      "links": [
+        {
+          "from": "george-blue-leg",
+          "label": "is the son of",
+          "to": "confiscated-bow",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and probate records"
+        },
+        {
+          "from": "george-blue-leg",
+          "label": "is the son of",
+          "to": "saves-life",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and probate records"
+        },
+        {
+          "from": "thomas-blue-leg",
+          "label": "is the son of",
+          "to": "confiscated-bow",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and probate records"
+        },
+        {
+          "from": "thomas-blue-leg",
+          "label": "is the son of",
+          "to": "saves-life",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and probate records"
+        },
+        {
+          "from": "nancy-little-white-man",
+          "label": "is the daughter of",
+          "to": "saves-life",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and probate records"
+        },
+        {
+          "from": "josephine-blue-legs",
+          "label": "is listed in the family tree as the sister of",
+          "to": "george-blue-leg",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "source": "Blue Leg family tree and probate records, including George Blue Legs’s estate record. Edward S. Stewart’s January 21, 1919 letter identifies Saves Life as the mother of George Blue Leg, Thomas Blue Leg, and Nancy Little White Man. Blue Legs Family Tree G, supplied screenshot, George Blue Legs profile.",
+      "familyGroup": "blue-legs"
+    },
+    {
+      "title": "George Blue Legs’s family",
+      "focus": "george-blue-leg",
+      "note": "The family tree names Jennie Fox Belly as George’s spouse. Freda Blue Legs appears twice in the screenshot. The chart shows one entry pending confirmation of whether both entries refer to the same person.",
+      "source": "Blue Legs Family Tree G, supplied screenshot, George Blue Legs profile.",
+      "generations": [
+        [
+          "george-blue-leg",
+          "jennie-fox-belly"
+        ],
+        [
+          "freda-blue-legs",
+          "edna-a-blue-legs",
+          "amenia-blue-legs",
+          "bert-blue-legs",
+          "vesta-blue-legs",
+          "gladys-blue-legs",
+          "percy-n-blue-legs"
+        ]
+      ],
+      "links": [
+        {
+          "from": "jennie-fox-belly",
+          "to": "george-blue-leg",
+          "label": "is listed as the spouse of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "freda-blue-legs",
+          "to": "george-blue-leg",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "edna-a-blue-legs",
+          "to": "george-blue-leg",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "amenia-blue-legs",
+          "to": "george-blue-leg",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "bert-blue-legs",
+          "to": "george-blue-leg",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "vesta-blue-legs",
+          "to": "george-blue-leg",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "gladys-blue-legs",
+          "to": "george-blue-leg",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "percy-n-blue-legs",
+          "to": "george-blue-leg",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "familyGroup": "blue-legs"
+    },
+    {
+      "title": "John Little Finger's family",
+      "note": "Yellow Horse, a Brulé man who died in 1886, and Mary Horse Woman, a Crow woman, were the parents of John Little Finger, Grace Black Eagle, and Justin Black Eagle. Mary’s second husband was Black Eagle No. 1, a Minneconjou man. They had a daughter whose name is still to be added. John’s son was Wallace Little Finger, also known as Yellow Horse. Wallace’s son was Leonard Little Finger. Mary Horse Woman’s half-siblings were He Crow, Medicine Woman Mousseau, William High Hawk, and Lucinda Pipe on Head.",
+      "focus": "john-little-finger",
+      "generations": [
+        [
+          "yellow-horse",
+          "mary-horse-woman",
+          "black-eagle"
+        ],
+        [
+          "grace-black-eagle",
+          "john-little-finger",
+          "justin-black-eagle",
+          "mary-black-eagle-daughter"
+        ],
+        [
+          "wallace-little-finger"
+        ],
+        [
+          "leonard-little-finger"
+        ]
+      ],
+      "links": [
+        {
+          "from": "john-little-finger",
+          "label": "is the son of",
+          "to": "yellow-horse",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "john-little-finger",
+          "label": "is the son of",
+          "to": "mary-horse-woman",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "black-eagle",
+          "label": "later married",
+          "to": "mary-horse-woman",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "yellow-horse",
+          "to": "mary-horse-woman",
+          "label": "was the first husband of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "grace-black-eagle",
+          "to": "yellow-horse",
+          "label": "is the daughter of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "grace-black-eagle",
+          "to": "mary-horse-woman",
+          "label": "is the daughter of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "justin-black-eagle",
+          "to": "yellow-horse",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "justin-black-eagle",
+          "to": "mary-horse-woman",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "mary-black-eagle-daughter",
+          "to": "black-eagle",
+          "label": "is the daughter of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "mary-black-eagle-daughter",
+          "to": "mary-horse-woman",
+          "label": "is the daughter of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "wallace-little-finger",
+          "to": "john-little-finger",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "leonard-little-finger",
+          "to": "wallace-little-finger",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        }
+      ],
+      "source": "John Little Finger’s probate record and Grace Black Eagle’s probate record. The August 4, 1922 letter places John Little Finger, Justin Black Eagle, and Grace Brings The Good in the Yellow Horse and Horse Woman family group. The August 9, 1922 agency letter identifies Horse Woman as the mother of Justin and Grace and also names her as Mrs. Black Eagle.",
+      "familyGroup": "little-finger"
+    },
+    {
+      "title": "Who raised John Little Finger: Turtle Bear's family",
+      "note": "John Little Finger moved between households. The family research notes place him first with Lucinda Pipe on Head and later with Medicine Woman Mousseau and Straw Woman. According to multiple primary records, Turtle Bear's children had different mothers: Coyote Woman, Slouchy, Runs After and Leggins Down. Which mother goes with which child: to be supplied. None of them were children of Spotted Elk.",
+      "focus": "john-little-finger",
+      "generations": [
+        [
+          "turtle-bear"
+        ],
+        [
+          "mary-horse-woman",
+          "lucinda-pipe-on-head",
+          "he-crow",
+          "shedding-bear-younger",
+          "medicine-woman-mousseau",
+          "william-high-hawk",
+          "straw-woman"
+        ],
+        [
+          "john-little-finger"
+        ]
+      ],
+      "links": [
+        {
+          "from": "lucinda-pipe-on-head",
+          "label": "is the daughter of",
+          "to": "turtle-bear",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "he-crow",
+          "label": "is the son of",
+          "to": "turtle-bear",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "shedding-bear-younger",
+          "label": "is the son of",
+          "to": "turtle-bear",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "medicine-woman-mousseau",
+          "label": "is the daughter of",
+          "to": "turtle-bear",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "william-high-hawk",
+          "label": "is the son of",
+          "to": "turtle-bear",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "lucinda-pipe-on-head",
+          "label": "is the sister of",
+          "to": "mary-horse-woman",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "john-little-finger",
+          "label": "is the son of",
+          "to": "mary-horse-woman",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "john-little-finger",
+          "label": "went to live with",
+          "to": "lucinda-pipe-on-head",
+          "record": null,
+          "page": 1,
+          "source": "Family research notes"
+        },
+        {
+          "from": "john-little-finger",
+          "label": "later lived with",
+          "to": "medicine-woman-mousseau",
+          "record": null,
+          "page": 1,
+          "source": "Family research notes"
+        },
+        {
+          "from": "john-little-finger",
+          "label": "later lived with",
+          "to": "straw-woman",
+          "record": null,
+          "page": 1,
+          "source": "Family research notes"
+        }
+      ],
+      "familyGroup": "little-finger"
+    },
+    {
+      "title": "Coyote Woman’s family",
+      "focus": "coyote-woman",
+      "note": "The family profile groups He Crow, Lucinda Pipe on Head, Looking Cloud, and William High Hawk with Coyote Woman and Hungry (Bear Turtle). The notes on Louisa Weasel Bear’s testimony use the name Little Cloud. The identification with Looking Cloud is still under review. In recalled testimony, Lucinda gave a different account of her mother’s marriages and named an unnamed man from Standing Rock as the father of No Ears (Confiscated the Bow). The testimony places William High Hawk’s mother’s death at Wounded Knee in 1890. The Leggins Down record for allotment 952 gives a death date of September 23, 1907. Whether that record refers to the same woman remains unresolved. The William High Hawk profile describes He Crow, Looking Cloud, and Lucinda as William’s full siblings, No Ears as a maternal half-brother, and Shedding Bear and Long Bull as paternal half-brothers. These descriptions are attributed to the probate testimony summarized in the profile.",
+      "source": "Louisa Weasel Bear’s March 10, 1919 testimony, p. 4, as cited in the research notes. Stanley Red Feather’s March 10, 1919 testimony. Lucinda Pipe on Head’s original and recalled testimony. Leggins Down allotment 952 records.",
+      "generations": [
+        [
+          "turtle-bear",
+          "coyote-woman"
+        ],
+        [
+          "he-crow",
+          "lucinda-pipe-on-head",
+          "looking-cloud",
+          "william-high-hawk"
+        ]
+      ],
+      "links": [
+        {
+          "from": "he-crow",
+          "to": "coyote-woman",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "lucinda-pipe-on-head",
+          "to": "coyote-woman",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "looking-cloud",
+          "to": "coyote-woman",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "william-high-hawk",
+          "to": "coyote-woman",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "turtle-bear",
+          "to": "coyote-woman",
+          "label": "is listed in the family profile as the spouse of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree and testimony"
+        },
+        {
+          "from": "he-crow",
+          "to": "turtle-bear",
+          "label": "is identified by Stanley Red Feather as a child of",
+          "record": "stanley-red-feather",
+          "page": 1,
+          "source": "Testimony"
+        },
+        {
+          "from": "lucinda-pipe-on-head",
+          "to": "turtle-bear",
+          "label": "is identified by Stanley Red Feather as a child of",
+          "record": "stanley-red-feather",
+          "page": 1,
+          "source": "Testimony"
+        },
+        {
+          "from": "looking-cloud",
+          "to": "turtle-bear",
+          "label": "is identified by Stanley Red Feather as a child of",
+          "record": "stanley-red-feather",
+          "page": 1,
+          "source": "Testimony"
+        },
+        {
+          "from": "william-high-hawk",
+          "to": "turtle-bear",
+          "label": "is identified by Stanley Red Feather as a child of",
+          "record": "stanley-red-feather",
+          "page": 1,
+          "source": "Testimony"
+        }
+      ]
+    },
+    {
+      "title": "Hungry (Bear Turtle): marriages and family notes",
+      "focus": "turtle-bear",
+      "generations": [
+        [
+          "turtle-bear"
+        ]
+      ],
+      "links": [],
+      "note": "The working profile gives Hungry’s death year as 1869 and lists Shedding Bear as another name for him. The same profile lists a separate Shedding Bear in the next generation. According to the profile’s summary of Medicine Woman Mousseau’s testimony, Hungry married seven times and had children with two wives. The working tree groups Horse Woman, Medicine Woman Mousseau, Shedding Bear, and Long Bull under Hungry and Runs After (Chases). Those parent assignments still need to be checked individually. In particular, the comparison notes also name Crow and Runs After in Horse Woman’s parentage. Whether those entries describe the same people remains unresolved.",
+      "source": "Stanley Red Feather’s March 10, 1919 testimony and Medicine Woman Mousseau’s June 27, 1921 testimony in the William High Hawk probate records. Hungry (Bear Turtle) working family profile."
+    },
+    {
+      "title": "Medicine Woman Mousseau and Young Wolf Ears",
+      "focus": "medicine-woman-mousseau",
+      "generations": [
+        [
+          "medicine-woman-mousseau",
+          "young-wolf-ears"
+        ],
+        [
+          "annie-young-wolf-ears",
+          "george-young-wolf-ears"
+        ]
+      ],
+      "links": [
+        {
+          "from": "young-wolf-ears",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed as the spouse of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "annie-young-wolf-ears",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "george-young-wolf-ears",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "source": "Medicine Woman Mousseau family profile, which cites the 1900, 1910, 1920, and 1930 U.S. censuses and the Indian Census Rolls. The 1921 William High Hawk testimony identifies her as Mrs. Alex Mousseau.",
+      "note": "The working profile groups these children with this household. Their individual parentage is still being checked. Annie Young Wolf Ears appears under both named spouses in the profile. She is shown once here, with her father left unresolved.",
+      "anchor": "medicine-woman-family",
+      "familyGroup": "medicine-woman"
+    },
+    {
+      "title": "Medicine Woman Mousseau and Alexander Mousseau",
+      "focus": "medicine-woman-mousseau",
+      "generations": [
+        [
+          "medicine-woman-mousseau",
+          "alexander-mousseau"
+        ],
+        [
+          "julia-mousseau",
+          "sophia-mousseau",
+          "agnes-mousseau",
+          "susan-black-bear",
+          "mary-mousseau",
+          "lucy-mousseau",
+          "jennie-mousseau"
+        ]
+      ],
+      "links": [
+        {
+          "from": "alexander-mousseau",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed as the spouse of",
+          "record": "medicine-woman-mousseau",
+          "page": 1,
+          "source": "Testimony"
+        },
+        {
+          "from": "julia-mousseau",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "sophia-mousseau",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "agnes-mousseau",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "susan-black-bear",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "mary-mousseau",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "lucy-mousseau",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "jennie-mousseau",
+          "to": "medicine-woman-mousseau",
+          "label": "is listed in the family profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "source": "Medicine Woman Mousseau family profile, which cites the 1900, 1910, 1920, and 1930 U.S. censuses and the Indian Census Rolls. The 1921 William High Hawk testimony identifies her as Mrs. Alex Mousseau.",
+      "note": "The working profile groups these children with this household. Their individual parentage is still being checked. The profile reports four marriages and leaves two spouses unnamed. Its 1910 census notes report eight children and two living, which still needs to be reconciled with the names in the profile.",
+      "familyGroup": "medicine-woman"
+    },
+    {
+      "title": "William High Hawk and Four Tracks",
+      "focus": "william-high-hawk",
+      "generations": [
+        [
+          "william-high-hawk",
+          "four-tracks"
+        ],
+        [
+          "black-elk-high-hawk",
+          "long-bull-son-high-hawk"
+        ]
+      ],
+      "links": [
+        {
+          "from": "four-tracks",
+          "to": "william-high-hawk",
+          "label": "is listed in the family profile as the spouse of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "black-elk-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "long-bull-son-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "source": "William Moses High Hawk #1 family profile. The profile cites Indian census rolls, the 1900 and 1910 U.S. censuses, and William High Hawk’s probate records (Cheyenne River allotment 97). The exact record for each spouse and child is still to be matched.",
+      "note": "The family profile groups these children under William High Hawk and Four Tracks. Long Bull in this group is listed as William’s son. The profile separately names a Long Bull as William’s paternal half-brother.",
+      "anchor": "high-hawk-family",
+      "familyGroup": "high-hawk"
+    },
+    {
+      "title": "William High Hawk and Eagle Woman",
+      "focus": "william-high-hawk",
+      "generations": [
+        [
+          "william-high-hawk",
+          "eagle-woman-high-hawk"
+        ],
+        [
+          "good-horse-high-hawk",
+          "young-white-cow-high-hawk"
+        ]
+      ],
+      "links": [
+        {
+          "from": "eagle-woman-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in the family profile as the spouse of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "good-horse-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "young-white-cow-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "source": "William Moses High Hawk #1 family profile. The profile cites Indian census rolls, the 1900 and 1910 U.S. censuses, and William High Hawk’s probate records (Cheyenne River allotment 97). The exact record for each spouse and child is still to be matched.",
+      "note": "The family profile groups these children under William High Hawk and Eagle Woman.",
+      "familyGroup": "high-hawk"
+    },
+    {
+      "title": "William High Hawk and Nancy High Hawk",
+      "focus": "william-high-hawk",
+      "generations": [
+        [
+          "william-high-hawk",
+          "nancy-high-hawk"
+        ],
+        [
+          "fannie-high-hawk",
+          "moses-bird-necklace-high-hawk",
+          "moses-high-hawk",
+          "daniel-high-hawk",
+          "annie-high-hawk"
+        ]
+      ],
+      "links": [
+        {
+          "from": "nancy-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in the family profile as the spouse of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "fannie-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "moses-bird-necklace-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "moses-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "daniel-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "annie-high-hawk",
+          "to": "william-high-hawk",
+          "label": "is listed in this family group as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "source": "William Moses High Hawk #1 family profile. The profile cites Indian census rolls, the 1900 and 1910 U.S. censuses, and William High Hawk’s probate records (Cheyenne River allotment 97). The exact record for each spouse and child is still to be matched.",
+      "note": "The family profile groups these children under William High Hawk and Nancy High Hawk. The profile has separate entries for Moses Bird Necklace High Hawk and Moses High Hawk.",
+      "familyGroup": "high-hawk"
+    },
+    {
+      "title": "He Crow and the Weasel Bear family",
+      "focus": "he-crow",
+      "note": "He Crow was Oglala. He married Louisa Afraid of Bull, who was Brulé. He Crow was killed at Wounded Knee in 1890. Louisa and their son Jackson survived. Nine years after Wounded Knee, Louisa married John Weasel Bear, who became Jackson’s stepfather.",
+      "source": "Probate records, census records, and testimony.",
+      "generations": [
+        [
+          "he-crow",
+          "afraid-of-bull",
+          "john-weasel-bear"
+        ],
+        [
+          "jackson-he-crow"
+        ]
+      ],
+      "links": [
+        {
+          "from": "afraid-of-bull",
+          "to": "he-crow",
+          "label": "married",
+          "record": null,
+          "page": 1,
+          "source": "Probate records, census records, and testimony"
+        },
+        {
+          "from": "afraid-of-bull",
+          "to": "john-weasel-bear",
+          "label": "later married",
+          "record": null,
+          "page": 1,
+          "source": "Probate records, census records, and testimony"
+        },
+        {
+          "from": "jackson-he-crow",
+          "to": "he-crow",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records, census records, and testimony"
+        },
+        {
+          "from": "jackson-he-crow",
+          "to": "afraid-of-bull",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records, census records, and testimony"
+        }
+      ],
+      "familyGroup": "he-crow"
+    },
+    {
+      "title": "James Pipe on Head’s family",
+      "focus": "james-pipe-on-head",
+      "note": "John Lone Man and Lucinda Pipe on Head (Waits for Her) were James’s parents. Lucinda later married Pipe on Head, James’s stepfather. The 1893 Pine Ridge Agency census places a boy recorded as Big Foot in the Pipe on Head household. Later records connect that name to James. The family profile names Mary Pipe on Head as James’s wife and lists eight children.",
+      "source": "1893 Pine Ridge Agency census, Pipe on Head household. Lucinda Pipe on Head probate record. Lone Man estate correspondence, 1923–1925, including the June 8, 1925 letter concerning Standing Rock allottee no. 140. James Pipe on Head’s family profile for the list of children.",
+      "generations": [
+        [
+          "john-lone-man",
+          "lucinda-pipe-on-head",
+          "pipe-on-head-stepfather"
+        ],
+        [
+          "james-pipe-on-head",
+          "mary-pipe-on-head"
+        ],
+        [
+          "norman-pipe-on-head",
+          "robert-pipe-on-head",
+          "agnes-pipe-on-head",
+          "susie-pipe-on-head",
+          "arlene-pipe-on-head",
+          "mercy-pipe-on-head",
+          "flossie-pipe-on-head",
+          "virginia-pipe-on-head"
+        ]
+      ],
+      "links": [
+        {
+          "from": "james-pipe-on-head",
+          "to": "john-lone-man",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "james-pipe-on-head",
+          "to": "lucinda-pipe-on-head",
+          "label": "is the son of",
+          "record": null,
+          "page": 1,
+          "source": "Probate records and agency letters"
+        },
+        {
+          "from": "pipe-on-head-stepfather",
+          "to": "james-pipe-on-head",
+          "label": "is the stepfather of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "mary-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is the wife of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "norman-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "robert-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "agnes-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "susie-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "arlene-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "mercy-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "flossie-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        },
+        {
+          "from": "virginia-pipe-on-head",
+          "to": "james-pipe-on-head",
+          "label": "is listed as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Family tree"
+        }
+      ],
+      "anchor": "james-pipe-on-head-family"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The submitted Little Finger family tree identifies Yellow Horse as a son of Chief Spotted Elk.",
+      "appeared": "Claimant-submitted family tree. Link pending.",
+      "recordSays": "Our review of Grace Black Eagle’s probate records indicates that Yellow Horse’s parents were listed as unknown.",
+      "stillNeedsProof": "A record establishing the parent–child relationship between Chief Spotted Elk and Yellow Horse.",
+      "source": "Grace Black Eagle probate record. Also see the August 4 and August 9, 1922 letters cited under John Little Finger’s family.",
+      "record": null
+    },
+    {
+      "claim": "Direct descent from Chief Spotted Elk through the He Crow line.",
+      "appeared": "Exact public statement and source pending.",
+      "recordSays": "He Crow was Oglala. He married Louisa Afraid of Bull, who was Brulé. He Crow was killed at Wounded Knee in 1890. Louisa and their son Jackson survived. Nine years after Wounded Knee, Louisa married John Weasel Bear, who became Jackson’s stepfather.",
+      "stillNeedsProof": "A documented parent–child chain connecting this branch to Chief Spotted Elk.",
+      "source": "Probate records, census records, and testimony.",
+      "record": null
+    },
+    {
+      "claim": "James Pipe on Head said Big Foot was his grandfather.",
+      "appeared": "The Wounded Knee Massacre: From the Viewpoint of the Sioux, McGregor, pp. 98–99, as cited in the working notes.",
+      "recordSays": "Probate records and Standing Rock Agency correspondence identify Lone Man and Lucinda Pipe on Head as James’s parents. The 1893 Pine Ridge Agency census places a boy recorded as Big Foot in the Pipe on Head household. Later records connect that name to James, whose stepfather was Pipe on Head.",
+      "stillNeedsProof": "Which man James meant by Big Foot and how either parent connects James to him.",
+      "source": "Lucinda Pipe on Head probate record, 1923. Standing Rock Agency letter concerning the estate of Lone Man, allottee no. 140, June 1, 1925.",
+      "record": null
+    },
+    {
+      "claim": "Lucinda Pipe on Head said her mother was Big Foot’s sister and that she was raised in his family.",
+      "appeared": "Lucinda’s statement. Original page pending.",
+      "recordSays": "Her statement describes her upbringing and a possible relationship through Big Foot’s sister.",
+      "stillNeedsProof": "Which Big Foot she meant and whether her mother was his sister. If verified, that would place Lucinda in his sister’s branch.",
+      "source": "Lucinda Pipe on Head’s original statement",
+      "record": null
+    },
+    {
+      "kind": "related",
+      "claim": "Mary Horse Woman’s parentage and the Little Finger family",
+      "appeared": "Medicine Woman Mousseau’s statement, June 27, 1921. Exact passage pending.",
+      "recordSays": "Our working notes summarize the account as naming Crow and Runs After in Mary Horse Woman’s parentage.",
+      "stillNeedsProof": "The separate claim through Yellow Horse still depends on evidence identifying his parents.",
+      "source": "Statement of Medicine Woman (Mrs. Alex Mousseau), June 27, 1921, William High Hawk probate records.",
+      "record": null
+    },
+    {
+      "kind": "related",
+      "claim": "William High Hawk, Medicine Woman Mousseau, and Lucinda",
+      "appeared": "William High Hawk probate records. Exact pages pending.",
+      "recordSays": "The estate correspondence records conflicting testimony about family relationships, including a reported half-sister relationship between Medicine Woman and Lucinda.",
+      "stillNeedsProof": "The proposed half-sister relationship remains unresolved.",
+      "source": "William High Hawk probate records, including Gorman and Stewart’s June 1921 correspondence and Medicine Woman Mousseau’s June 27, 1921 statement.",
+      "record": null
+    },
+    {
+      "kind": "related",
+      "claim": "Bear Robe / Broken Nose branch",
+      "appeared": "Working kinship chart. Supporting record pages pending.",
+      "recordSays": "The working chart traces this branch through Flossie Pipe On Head / Bear Robe.",
+      "stillNeedsProof": "Any line through James depends on establishing his connection to Chief Spotted Elk.",
+      "source": "Supporting records for the branch",
+      "record": null
+    }
+  ],
+  "records": [
+    {
+      "id": "medicine-woman-mousseau",
+      "title": "Medicine Woman Mousseau’s testimony",
+      "citation": "William High Hawk probate records. Testimony of Medicine Woman, also identified as Mrs. Alex Mousseau.",
+      "credit": "Scan from the Spotted Elk Tiospaye research files. Archival credit to be confirmed.",
+      "pages": [
+        {
+          "src": "./scans/medicine-woman-mousseau/page-1.jpg",
+          "caption": "Page 1",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/medicine-woman-mousseau/page-2.jpg",
+          "caption": "Page 2",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/medicine-woman-mousseau/page-3.jpg",
+          "caption": "Page 3",
+          "lookFor": "Read the witness’s statement on this page."
+        }
+      ]
+    },
+    {
+      "id": "lucinda-high-hawk",
+      "title": "Lucinda Pipe on Head’s testimony",
+      "citation": "William High Hawk probate records. Testimony of Lucinda Pipe on Head.",
+      "credit": "Scan from the Spotted Elk Tiospaye research files. Archival credit to be confirmed.",
+      "pages": [
+        {
+          "src": "./scans/lucinda-high-hawk/page-1.jpg",
+          "caption": "Page 1",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/lucinda-high-hawk/page-2.jpg",
+          "caption": "Page 2",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/lucinda-high-hawk/page-3.jpg",
+          "caption": "Page 3",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/lucinda-high-hawk/page-4.jpg",
+          "caption": "Page 4",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/lucinda-high-hawk/page-5.jpg",
+          "caption": "Page 5",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/lucinda-high-hawk/page-6.jpg",
+          "caption": "Page 6",
+          "lookFor": "Read the witness’s statement on this page."
+        }
+      ]
+    },
+    {
+      "id": "lucinda-recalled",
+      "title": "Lucinda Pipe on Head’s recalled testimony",
+      "citation": "William High Hawk probate records. Recalled testimony of Lucinda Pipe on Head, also identified as Waits for Her.",
+      "credit": "Scan from the Spotted Elk Tiospaye research files. Archival credit to be confirmed.",
+      "pages": [
+        {
+          "src": "./scans/lucinda-recalled/page-1.jpg",
+          "caption": "Page 1",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/lucinda-recalled/page-2.jpg",
+          "caption": "Page 2",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/lucinda-recalled/page-3.jpg",
+          "caption": "Page 3",
+          "lookFor": "Read the witness’s statement on this page."
+        }
+      ]
+    },
+    {
+      "id": "louisa-weasel-bear",
+      "title": "Louisa Weasel Bear’s testimony",
+      "citation": "Probate records. Testimony of Louisa Weasel Bear.",
+      "credit": "Scan from the Spotted Elk Tiospaye research files. Archival credit to be confirmed.",
+      "pages": [
+        {
+          "src": "./scans/louisa-weasel-bear/page-1.jpg",
+          "caption": "Page 1",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/louisa-weasel-bear/page-2.jpg",
+          "caption": "Page 2",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/louisa-weasel-bear/page-3.jpg",
+          "caption": "Page 3",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/louisa-weasel-bear/page-4.jpg",
+          "caption": "Page 4",
+          "lookFor": "Read the witness’s statement on this page."
+        }
+      ]
+    },
+    {
+      "id": "stanley-red-feather",
+      "title": "Stanley Red Feather’s testimony",
+      "citation": "William High Hawk probate records. Testimony of Stanley Red Feather.",
+      "credit": "Scan from the Spotted Elk Tiospaye research files. Archival credit to be confirmed.",
+      "pages": [
+        {
+          "src": "./scans/stanley-red-feather/page-1.jpg",
+          "caption": "Page 1",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/stanley-red-feather/page-2.jpg",
+          "caption": "Page 2",
+          "lookFor": "Read the witness’s statement on this page."
+        },
+        {
+          "src": "./scans/stanley-red-feather/page-3.jpg",
+          "caption": "Page 3",
+          "lookFor": "Read the witness’s statement on this page."
+        }
+      ]
+    },
+    {
+      "id": "photographs",
+      "title": "Photographs: which man is which",
+      "citation": "Archival citation to be supplied: repository, collection, item, date.",
+      "credit": "Source credit to be supplied.",
+      "pages": [
+        {
+          "src": "./img/chief-spotted-elk.png",
+          "caption": "Photograph identified as Ōpȟáŋ Glešká (Chief Spotted Elk)",
+          "lookFor": "To be supplied: what readers should notice in this photograph."
+        },
+        {
+          "src": "./img/si-tanka-big-foot.png",
+          "caption": "Photograph identified as Big Foot (Sí Tȟáŋka), the Oglala man",
+          "lookFor": "To be supplied: what readers should notice in this photograph."
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "medicine-woman",
+      "name": "Medicine Woman Mousseau",
+      "chart": "medicine-woman-family",
+      "records": [
+        [
+          "medicine-woman-mousseau",
+          "Read Medicine Woman’s testimony"
+        ]
+      ],
+      "paragraphs": [
+        "Medicine Woman Mousseau was born about 1857 according to the working family profile. She appears as Mrs. Alex Mousseau in the William High Hawk probate testimony. The working tree places her with Hungry (Bear Turtle) and Runs After (Chases). The exact parentage and how she was related to the others named in the estate testimony are still being checked.",
+        "The profile names Young Wolf Ears and Alexander Mousseau as spouses and lists two unnamed spouses. It places Annie and George in the Young Wolf Ears household. Under Alexander it lists Julia, Sophia, Agnes, Annie, Susan Black Bear, Mary, Lucy, and Jennie. Annie appears under both households, so the chart shows her once and leaves her father unresolved. The 1910 census notes report eight children, two living. That count still needs to be reconciled with the profile.",
+        "Sources: Medicine Woman Mousseau’s testimony in the William High Hawk probate records, the Indian Census Rolls, and the 1900, 1910, 1920, and 1930 U.S. censuses cited in the working profile."
+      ]
+    },
+    {
+      "id": "high-hawk",
+      "name": "William Moses High Hawk",
+      "chart": "high-hawk-family",
+      "records": [
+        [
+          "stanley-red-feather",
+          "Read Stanley Red Feather’s testimony"
+        ],
+        [
+          "louisa-weasel-bear",
+          "Read Louisa Weasel Bear’s testimony"
+        ]
+      ],
+      "paragraphs": [
+        "William High Hawk was born about 1848 according to the working profile. His probate case identifies him as Cheyenne River allottee no. 97. Stanley Red Feather’s testimony names Turtle Bear as his father and names He Crow, Looking Cloud, and Lucinda Pipe on Head as siblings. Stanley says William’s mother was killed at Wounded Knee. Whether she is the woman in the Leggins Down allotment record dated 1907 remains unresolved.",
+        "The profile groups Black Elk and Long Bull with Four Tracks, Good Horse and Young White Cow with Eagle Woman, and Fannie Whirlwind, Moses Bird Necklace, Moses High Hawk, Daniel, and Annie with Nancy High Hawk. The Long Bull listed as William’s son has a separate entry from the Long Bull listed as his paternal half-brother. The two Moses entries also remain separate pending record review.",
+        "Sources: William High Hawk probate records, Stanley Red Feather and Louisa Weasel Bear’s testimony, Indian Census Rolls, and the 1900 and 1910 U.S. censuses cited in the working profile."
+      ]
+    },
+    {
+      "id": "james-pipe-on-head",
+      "name": "James Pipe on Head",
+      "chart": "james-pipe-on-head-family",
+      "records": [],
+      "paragraphs": [
+        "The probate records reviewed identify John Lone Man and Lucinda Pipe on Head, also known as Waits for Her, as James’s parents. Lucinda later married Pipe on Head, who was James’s stepfather. The 1893 Pine Ridge Agency census lists a boy named Big Foot in the Pipe on Head household. Later records connect that name to James.",
+        "In his published statement, James said Big Foot was his grandfather. The census identifies the boy in the household, and the probate records identify his parents. The claimed grandparent relationship still depends on identifying which Big Foot James meant and establishing the link through one of his parents.",
+        "The family profile lists Mary Pipe on Head as James’s wife and names eight children: Norman, Robert, Agnes, Susie, Arlene, Mercy, Flossie, and Virginia.",
+        "Sources: 1893 Pine Ridge Agency census, Lucinda Pipe on Head probate records, Lone Man estate correspondence from 1923–1925, and McGregor’s The Wounded Knee Massacre: From the Viewpoint of the Sioux, pp. 98–99, as cited in the working notes."
+      ]
+    }
+  ],
+  "familyGroups": {
+    "blue-legs": "Blue Legs family",
+    "high-hawk": "High Hawk family",
+    "little-finger": "Little Finger / Horse Woman family",
+    "he-crow": "He Crow family",
+    "medicine-woman": "Mousseau family"
+  }
+}
+</script>
+
+<script>
+(() => {
+  const TEMPLATE = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  const dataEl = document.getElementById('site-data');
+  let DATA = JSON.parse(dataEl.textContent);
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const isPending = s => /to be supplied/i.test(String(s ?? ''));
+  const txt = s => isPending(s) ? `<span class="pending">${esc(s)}</span>` : esc(s);
+  const person = id => DATA.people[id] || { name: id, placeholder: true };
+  const recordById = id => DATA.records.find(r => r.id === id);
+
+  /* Comparison */
+  function renderComparison() {
+    const c = DATA.comparison;
+    const [A, B] = c.columns;
+    const photo = col => {
+      if (!col.photo) return '';
+      const img = `<img src="${esc(col.photo)}" alt="${esc(col.photoAlt || col.name)}">`;
+      const linked = col.photoRecord && recordById(col.photoRecord);
+      return linked
+        ? `<button class="cmp-photo" data-record="${esc(col.photoRecord)}" data-page="${col.photoPage || 1}" aria-label="Open photograph of ${esc(col.name)} in the reader">${img}<span>View with source →</span></button>`
+        : `<div class="cmp-photo">${img}</div>`;
+    };
+    let html = `<div class="cmp-head" role="row">
+      <div role="columnheader"><span class="sr-only">Detail</span></div>
+      <div class="a" role="columnheader">${photo(A)}<div class="who">${esc(A.name)}</div><div class="who-sub">${esc(A.sub)}</div></div>
+      <div class="b" role="columnheader">${photo(B)}<div class="who">${esc(B.name)}</div><div class="who-sub">${esc(B.sub)}</div></div>
+    </div>`;
+    c.rows.forEach(r => {
+      html += `<div class="cmp-row" role="row">
+        <div class="label" role="rowheader">${esc(r.label)}</div>
+        <div class="cell" role="cell"><span class="sr-only">${esc(A.name)}: </span>${txt(r.a)}</div>
+        <div class="cell" role="cell"><span class="sr-only">${esc(B.name)}: </span>${txt(r.b)}</div>
+      </div>`;
+    });
+    $('#cmp').innerHTML = html;
+    $('#quick').innerHTML = (c.quick || []).map(q => `<div><strong>If</strong> ${esc(q.if)}, ${esc(q.then)}</div>`).join('');
+  }
+
+  /* Kinship charts */
+  const charts = [];
+  function chartHTML(chart, idx, small) {
+    const focus = chart.focus;
+    const gens = chart.generations.map(g => `<div class="gen">${g.map(id => {
+      const p = person(id);
+      return `<div class="node${p.placeholder ? ' placeholder' : ''}${id === focus ? ' focus' : ''}" data-pid="${esc(id)}">
+        <div class="n">${esc(p.name)}</div>
+        ${p.alt ? `<div class="alt">${esc(p.alt)}</div>` : ''}
+        ${p.detail ? `<div class="d">${esc(p.detail)}</div>` : ''}
+      </div>`;
+    }).join('')}</div>`).join('');
+    const rels = chart.links.map((l, i) => {
+      const f = person(l.from), t = person(l.to);
+      const linked = l.record && recordById(l.record);
+      return `<li><button class="rel" ${linked ? `data-record="${esc(l.record)}" data-page="${l.page || 1}"` : 'disabled'}>
+        <span class="num" aria-hidden="true">${i + 1}</span>
+        <span><strong>${esc(f.name)}</strong> ${txt(l.label)} <strong>${esc(t.name)}</strong></span>
+        <span class="go">${txt(l.source || 'Source pending')}${linked ? ' · Open record →' : ''}</span>
+      </button></li>`;
+    }).join('');
+    return `<div class="chart${small ? ' small' : ''}" data-chart="${idx}"${chart.anchor ? ` id="${esc(chart.anchor)}"` : ""}>
+      <h3>${txt(chart.title)}</h3>
+      ${chart.note ? `<p class="chart-note">${txt(chart.note)}</p>` : ''}
+      ${chart.source ? `<p class="chart-note"><strong>Source</strong><br>${txt(chart.source)}</p>` : ''}
+      ${chart.generations.some(g => g.length > 1) ? '<p class="scroll-hint">Swipe sideways to see the whole chart.</p>' : ''}
+      <div class="tree-scroll"><div class="tree"><svg aria-hidden="true"></svg>${gens}<div class="badges"></div></div></div>
+      ${rels ? `<h4 class="facts-heading">Facts</h4><ol class="rels" aria-label="Numbered facts">${rels}</ol>` : ""}
+    </div>`;
+  }
+
+  function profileHTML(p) {
+    return `<article class="family-profile prose" id="profile-${esc(p.id)}">
+      <h3>${esc(p.name)}</h3>
+      ${p.paragraphs.map(paragraph => `<p>${esc(paragraph)}</p>`).join('')}
+      <div class="family-jump">
+        <a href="#${esc(p.chart)}">View the family chart</a>
+        ${p.records.map(([id, label]) => `<button class="btn btn-ghost btn-sm" data-record="${esc(id)}" data-page="1">${esc(label)}</button>`).join('')}
+      </div>
+    </article>`;
+  }
+
+  function renderProfiles() {
+    $('#family-profiles').innerHTML = (DATA.profiles || [])
+      .filter(profile => !DATA.familyGroups?.[profile.id]).map(profileHTML).join('');
+  }
+
+  function renderCharts() {
+    charts.length = 0;
+    charts.push(DATA.mainChart, ...(DATA.relatedCharts || []));
+    $('#main-chart').innerHTML = chartHTML(DATA.mainChart, 0, false);
+    const related = DATA.relatedCharts || [];
+    const groups = new Map();
+    const layout = [];
+    related.forEach((chart, i) => {
+      const key = chart.familyGroup;
+      if (!key) {
+        layout.push(chartHTML(chart, i + 1, true));
+        return;
+      }
+      if (!groups.has(key)) {
+        groups.set(key, []);
+        layout.push(key);
+      }
+      groups.get(key).push(chartHTML(chart, i + 1, true));
+    });
+    $('#related-charts').innerHTML = layout.map(item => {
+      if (!groups.has(item)) return item;
+      const profile = (DATA.profiles || []).find(p => p.id === item);
+      return `<section class="family-group" id="family-${esc(item)}" aria-labelledby="family-heading-${esc(item)}">
+        <h3 id="family-heading-${esc(item)}">${esc(DATA.familyGroups[item])}</h3>
+        ${profile ? profileHTML(profile) : ''}
+        <div class="related">${groups.get(item).join('')}</div>
+      </section>`;
+    }).join('');
+    drawAll();
+    document.querySelectorAll('.tree-scroll').forEach(s => { s.scrollLeft = (s.scrollWidth - s.clientWidth) / 2; });
+  }
+
+  function drawLinks(chartEl) {
+    const chart = charts[+chartEl.dataset.chart];
+    const tree = $('.tree', chartEl), svg = $('svg', tree), layer = $('.badges', tree);
+    const tb = tree.getBoundingClientRect();
+    const rect = el => { const r = el.getBoundingClientRect(); return { l: r.left - tb.left, r: r.right - tb.left, t: r.top - tb.top, b: r.bottom - tb.top, cx: r.left - tb.left + r.width / 2, cy: r.top - tb.top + r.height / 2 }; };
+    let paths = '', badges = ''; const used = [];
+    chart.links.forEach((l, i) => {
+      const a = tree.querySelector(`[data-pid="${CSS.escape(l.from)}"]`), b = tree.querySelector(`[data-pid="${CSS.escape(l.to)}"]`);
+      if (!a || !b) return;
+      const ra = rect(a), rb = rect(b);
+      let d, mx, my;
+      if (Math.abs(ra.cy - rb.cy) < 10) {
+        const [L, R] = ra.cx < rb.cx ? [ra, rb] : [rb, ra];
+        d = `M${L.r} ${L.cy} H${R.l}`; mx = (L.r + R.l) / 2; my = L.cy;
+      } else {
+        const [T, B] = ra.cy < rb.cy ? [ra, rb] : [rb, ra];
+        const midY = (T.b + B.t) / 2;
+        d = `M${T.cx} ${T.b} V${midY} H${B.cx} V${B.t}`; mx = (T.cx + B.cx) / 2; my = midY;
+      }
+      while (used.some(([x, y]) => Math.abs(x - mx) < 30 && Math.abs(y - my) < 30)) mx += 32;
+      used.push([mx, my]);
+      const linked = l.record && recordById(l.record);
+      paths += `<path d="${d}" class="${linked ? '' : 'pending-line'}"/>`;
+      const f = person(l.from).name, t = person(l.to).name;
+      const lbl = `Relationship ${i + 1}: ${f} ${l.label} ${t}.${l.source ? ' Source: ' + l.source + '.' : ''}${linked ? ' Open record.' : ''}`;
+      badges += `<button class="badge" style="left:${mx}px;top:${my}px" aria-label="${esc(lbl)}" title="${esc(lbl)}" ${linked ? `data-record="${esc(l.record)}" data-page="${l.page || 1}"` : 'disabled'}>${i + 1}</button>`;
+    });
+    svg.setAttribute('width', tb.width); svg.setAttribute('height', tb.height);
+    svg.innerHTML = paths; layer.innerHTML = badges;
+  }
+  const drawAll = () => document.querySelectorAll('.chart').forEach(drawLinks);
+  new ResizeObserver(() => drawAll()).observe(document.body);
+  document.fonts?.ready.then(drawAll);
+
+  /* Claims */
+  function renderClaims() {
+    $('#claims-list').innerHTML = DATA.claims.map((c, i) => {
+      const record = c.record && recordById(c.record);
+      const page = c.page || 1;
+      const linked = record && !record.placeholder && record.pages[page - 1]?.src;
+      return `<article class="claim" aria-labelledby="claim-${i}">
+        <div class="claim-top">
+          <p class="claim-k">${c.kind === "related" ? "Related kinship question" : "What was claimed"}</p>
+          <p class="claim-text" id="claim-${i}">${txt(c.claim)}</p>
+        </div>
+        <div class="claim-body">
+          <div><p class="claim-k">${c.kind === "related" ? "Where to look" : "Where the claim appeared"}</p><p>${txt(c.appeared)}</p>${/^https?:\/\//i.test(c.claimUrl || "") ? `<a href="${esc(c.claimUrl)}">Read the public claim</a>` : ""}</div>
+          <div class="says"><p class="claim-k">What the record says</p><p>${txt(c.recordSays)}</p></div>
+          <div><p class="claim-k">What still needs proof</p><p>${txt(c.stillNeedsProof)}</p></div>
+          <div><p class="claim-k">Supporting source</p><p>${txt(c.source)}</p></div>
+          ${linked ? `<button class="btn btn-red" data-record="${esc(c.record)}" data-page="${page}">Read the record</button>` : ''}
+        </div>
+      </article>`;
+    }).join('');
+  }
+
+  /* Reader */
+  const ZOOMS = [1, 1.5, 2, 3];
+  const state = { rid: null, page: 1, z: 0 };
+
+  function renderReaderSelect() {
+    $('#rec-select').innerHTML = DATA.records.map(r => `<option value="${esc(r.id)}">${esc(r.title)}</option>`).join('');
+  }
+
+  function baseUrl() { return location.href.split('#')[0]; }
+  function hashFor(rid, p) { return `#record/${encodeURIComponent(rid)}/${p}`; }
+
+  function show(rid, page, dir, updateHash = true) {
+    const rec = recordById(rid) || DATA.records[0];
+    if (!rec) return;
+    const total = rec.pages.length;
+    page = Math.min(Math.max(1, page | 0 || 1), total);
+    const changedRecord = rec.id !== state.rid;
+    state.rid = rec.id; state.page = page;
+    if (changedRecord) state.z = 0;
+    const pg = rec.pages[page - 1] || {};
+
+    $('#rec-select').value = rec.id;
+    const sheet = $('#sheet');
+    sheet.innerHTML = pg.src
+      ? `<img src="${esc(pg.src)}" alt="${esc(`${rec.title}, ${pg.caption || 'page ' + page}`)}">`
+      : `<div class="blank" role="img" aria-label="Scan not yet added"><strong>Scan to be added</strong><span>${esc(rec.title)} · ${esc(pg.caption || 'Page ' + page)}</span></div>`;
+    sheet.classList.remove('flip-next', 'flip-prev');
+    if (dir) { void sheet.offsetWidth; sheet.classList.add(dir > 0 ? 'flip-next' : 'flip-prev'); }
+    applyZoom();
+
+    $('#pg').textContent = `Page ${page} of ${total}`;
+    $('#prev').disabled = page <= 1;
+    $('#next').disabled = page >= total;
+    $('#thumbs').innerHTML = rec.pages.map((_, i) => `<button data-goto="${i + 1}" aria-label="Page ${i + 1}" aria-current="${i + 1 === page}">${i + 1}</button>`).join('');
+
+    const cite = pg.citation || rec.citation, credit = pg.credit || rec.credit;
+    $('#figcap').innerHTML = `${txt(pg.caption || 'Page ' + page)} · Credit: ${txt(credit)}`;
+    $('#r-title').innerHTML = txt(rec.title);
+    $('#r-pagecap').textContent = pg.caption || `Page ${page}`;
+    $('#r-look').innerHTML = txt(pg.lookFor || 'To be supplied.');
+    $('#r-cite').innerHTML = txt(cite);
+    $('#r-credit').innerHTML = txt(credit);
+
+    const h = hashFor(rec.id, page);
+    try { if (updateHash && location.hash !== h) history.replaceState(null, '', h); } catch (e) {}
+    $('#share-url').value = baseUrl() + h;
+    $('#copy-status').textContent = '';
+  }
+
+  function applyZoom() {
+    const z = ZOOMS[state.z];
+    $('#sheet').style.width = (z * 100) + '%';
+    $('#sheet').style.maxWidth = z === 1 ? '100%' : 'none';
+    $('#zv').textContent = Math.round(z * 100) + '%';
+    $('#zout').disabled = state.z === 0;
+    $('#zin').disabled = state.z === ZOOMS.length - 1;
+  }
+
+  function openRecord(rid, page) {
+    const dir = rid === state.rid ? Math.sign(page - state.page) : 1;
+    show(rid, page, dir || 0);
+    $('#reader').scrollIntoView({ block: 'start' });
+    $('#book').focus({ preventScroll: true });
+  }
+
+  function fromHash() {
+    const m = location.hash.match(/^#record\/([^/]+)\/(\d+)/);
+    if (m) { show(decodeURIComponent(m[1]), +m[2]); return true; }
+    return false;
+  }
+
+  document.addEventListener('click', e => {
+    const t = e.target.closest('[data-record]');
+    if (t && !t.disabled) { e.preventDefault(); openRecord(t.dataset.record, +t.dataset.page); return; }
+    const g = e.target.closest('[data-goto]');
+    if (g) { const p = +g.dataset.goto; show(state.rid, p, Math.sign(p - state.page)); }
+  });
+  $('#prev').onclick = () => show(state.rid, state.page - 1, -1);
+  $('#next').onclick = () => show(state.rid, state.page + 1, 1);
+  $('#zin').onclick = () => { state.z = Math.min(ZOOMS.length - 1, state.z + 1); applyZoom(); };
+  $('#zout').onclick = () => { state.z = Math.max(0, state.z - 1); applyZoom(); };
+  $('#zreset').onclick = () => { state.z = 0; applyZoom(); };
+  $('#rec-select').onchange = e => show(e.target.value, 1, 1);
+  $('#book').addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); if (!$('#next').disabled) $('#next').click(); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); if (!$('#prev').disabled) $('#prev').click(); }
+  });
+  window.addEventListener('hashchange', () => { if (fromHash()) $('#reader').scrollIntoView(); });
+  $('#copy').onclick = async () => {
+    const input = $('#share-url');
+    try { await navigator.clipboard.writeText(input.value); $('#copy-status').textContent = 'Link copied.'; }
+    catch { input.select(); $('#copy-status').textContent = 'Link selected. Press Ctrl+C or ⌘C to copy.'; }
+  };
+
+  /* Editor */
+  const dlg = $('#editor');
+  $('#edit-open').onclick = () => { $('#ed-text').value = JSON.stringify(DATA, null, 2); $('#ed-err').textContent = ''; dlg.showModal(); };
+  $('#ed-close').onclick = () => dlg.close();
+  function parseEditor() {
+    try { const d = JSON.parse($('#ed-text').value); $('#ed-err').textContent = ''; return d; }
+    catch (err) { $('#ed-err').textContent = 'This isn’t valid JSON: ' + err.message; return null; }
+  }
+  $('#ed-apply').onclick = () => { const d = parseEditor(); if (d) { DATA = d; renderAll(); dlg.close(); } };
+  function download(name, text, type) {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([text], { type }));
+    a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  }
+  $('#ed-json').onclick = () => { const d = parseEditor(); if (d) download('site-data.json', JSON.stringify(d, null, 2), 'application/json'); };
+  $('#ed-page').onclick = () => {
+    const d = parseEditor(); if (!d) return;
+    const json = JSON.stringify(d, null, 2).replace(/</g, '\\u003c');
+    const out = TEMPLATE.replace(/(<script type="application\/json" id="site-data">)[\s\S]*?(<\/script>)/, (_, a, b) => `${a}\n${json}\n${b}`);
+    download('index.html', out, 'text/html');
+  };
+
+  function renderAll() {
+    document.querySelectorAll('[data-bind="credit"]').forEach(el => el.textContent = DATA.credit);
+    renderComparison(); renderProfiles(); renderCharts(); renderClaims(); renderReaderSelect();
+    const firstWithScan = DATA.records.find(r => r.pages.some(p => p.src)) || DATA.records[0];
+    if (!fromHash()) show(state.rid && recordById(state.rid) ? state.rid : firstWithScan?.id, state.page, 0, false);
+  }
+  renderAll();
+})();
+</script>
+</body>
+</html>
