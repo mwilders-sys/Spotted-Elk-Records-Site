@@ -346,12 +346,12 @@
       <h2 id="kin-h">Lakota Kinship Clusters and Public Claims of Descent from Chief Spotted Elk</h2>
       <p class="lede">This section grew out of public claims of descent from Chief Spotted Elk made by members of the families discussed here. It also includes documented branches for comparison. The charts show how people appear in the records through parentage, marriage, stepfamily ties, and shared households. The Public Claims section identifies who made each reported claim, and what the records say about the family relationships.</p>
       <nav class="family-jump" aria-label="Jump to a family section">
-        <a href="#family-blue-legs">Blue Legs family</a>
-        <a href="#family-high-hawk">High Hawk family</a>
-        <a href="#family-little-finger">Little Finger / Horse Woman family</a>
-        <a href="#family-he-crow">He Crow family</a>
-        <a href="#family-medicine-woman">Mousseau family</a>
-        <a href="#profile-james-pipe-on-head">James Pipe on Head</a>
+        <a href="#family-he-crow">He Crow / Star Comes Out</a>
+        <a href="#family-james-pipe-on-head">Pipe on Head / Broken Nose / Bear Robe</a>
+        <a href="#family-little-finger">Little Finger / Yellow Horse / Mary Horse Woman</a>
+        <a href="#family-high-hawk">High Hawk</a>
+        <a href="#family-medicine-woman">Mousseau</a>
+        <a href="#family-blue-legs">Blue Legs</a>
       </nav>
       <h3>Primary Source Documentary Evidence</h3>
       <div class="descent-table-wrap" role="region" aria-label="Kinship and descent comparison" tabindex="0">
@@ -2412,7 +2412,8 @@
           "page": 1
         }
       ],
-      "anchor": "james-pipe-on-head-family"
+      "anchor": "james-pipe-on-head-family",
+      "familyGroup": "james-pipe-on-head"
     }
   ],
   "claims": [
@@ -2964,11 +2965,12 @@
     }
   ],
   "familyGroups": {
-    "blue-legs": "Blue Legs family",
-    "high-hawk": "High Hawk family",
-    "little-finger": "Little Finger / Horse Woman family",
-    "he-crow": "He Crow family",
-    "medicine-woman": "Mousseau family"
+    "he-crow": "He Crow / Star Comes Out",
+    "james-pipe-on-head": "Pipe on Head / Broken Nose / Bear Robe",
+    "little-finger": "Little Finger / Yellow Horse / Mary Horse Woman",
+    "high-hawk": "High Hawk",
+    "medicine-woman": "Mousseau",
+    "blue-legs": "Blue Legs"
   },
   "claimAttributionPending": []
 }
@@ -3070,7 +3072,7 @@
     $('#main-chart').innerHTML = chartHTML(DATA.mainChart, 0, false);
     const related = DATA.relatedCharts || [];
     const groups = new Map();
-    const layout = [];
+    const standalone = [];
     $('#oglala-family-chart').innerHTML = '';
     related.forEach((chart, i) => {
       if (chart.anchor === 'oglala-big-foot-family') {
@@ -3079,24 +3081,22 @@
       }
       const key = chart.familyGroup;
       if (!key) {
-        layout.push(chartHTML(chart, i + 1, true));
+        standalone.push(chartHTML(chart, i + 1, true));
         return;
       }
       if (!groups.has(key)) {
         groups.set(key, []);
-        layout.push(key);
       }
       groups.get(key).push(chartHTML(chart, i + 1, true));
     });
-    $('#related-charts').innerHTML = layout.map(item => {
-      if (!groups.has(item)) return item;
+    $('#related-charts').innerHTML = Object.keys(DATA.familyGroups).filter(key => groups.has(key)).map(item => {
       const profile = (DATA.profiles || []).find(p => p.id === item);
       return `<section class="family-group" id="family-${esc(item)}" aria-labelledby="family-heading-${esc(item)}">
         <h3 id="family-heading-${esc(item)}">${esc(DATA.familyGroups[item])}</h3>
         ${profile ? profileHTML(profile) : ''}
         <div class="related">${groups.get(item).join('')}</div>
       </section>`;
-    }).join('');
+    }).join('') + standalone.join('');
     drawAll();
     document.querySelectorAll('.tree-scroll').forEach(s => { s.scrollLeft = (s.scrollWidth - s.clientWidth) / 2; });
   }
