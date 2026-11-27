@@ -92,7 +92,7 @@
   .chart h3{margin:0 0 .25rem;font-size:1.3rem}
   .chart .chart-note{color:var(--muted);font-size:.875rem;margin:0 0 1.25rem}
   .chart.small h3{font-size:1.1rem}
-  .tree{position:relative;display:flex;flex-direction:column;gap:3.5rem;padding:.5rem 0}
+  .tree{position:relative;display:flex;flex-direction:column;gap:2.5rem;padding:.5rem 0}
   .tree svg{position:absolute;inset:0;pointer-events:none;overflow:visible}
   .tree path{fill:none;stroke:var(--gold);stroke-width:1.5;opacity:.7}
   .tree path.pending-line{stroke:var(--muted);stroke-dasharray:4 4;opacity:.5}
@@ -100,7 +100,7 @@
   .tree{width:max-content;min-width:100%}
   .scroll-hint{font-size:.8125rem;color:var(--muted);margin:-.75rem 0 1rem}
   @media(min-width:720px){.scroll-hint{display:none}}
-  .gen{display:flex;flex-wrap:nowrap;justify-content:center;gap:1rem 2.5rem;position:relative;z-index:1}
+  .gen{display:flex;flex-wrap:nowrap;justify-content:center;gap:2rem;position:relative;z-index:1}
   .node{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:.6rem .85rem;min-width:9rem;max-width:14rem;text-align:center}
   .node .n{font-family:var(--serif);font-weight:700;line-height:1.25}
   .node .alt{font-size:.8125rem;color:var(--gold)}
@@ -129,9 +129,14 @@
   .rel .go{grid-column:2;font-size:.8125rem;color:var(--gold)}
   @media(min-width:720px){.rel .go{grid-column:auto}}
   .rel:disabled .go{color:var(--muted);font-style:italic}
-  .related{display:grid;gap:1.5rem}
-  @media(min-width:900px){.related{grid-template-columns:1fr 1fr}}
+  .related{display:grid;align-items:start;gap:1.25rem}
+  @media(min-width:900px){.related{grid-template-columns:repeat(2,minmax(0,1fr))}}
   .related .chart{margin:0;min-width:0}
+  #james-pipe-on-head-family{grid-column:1 / -1}
+  #james-pipe-on-head-family .gen{column-gap:1.875rem}
+  #james-pipe-on-head-family .node{width:6.5rem;min-width:6.5rem;padding:.6rem .4rem;overflow-wrap:anywhere}
+  #james-pipe-on-head-family .tree-scroll{scrollbar-width:auto}
+
 
   /* Claims */
   .claims{display:grid;gap:1.25rem}
@@ -904,6 +909,22 @@
     },
     "emma-bitters": {
       "name": "Emma Bitters"
+    },
+    "yellow-horse-father-unknown": {
+      "name": "Yellow Horse’s father",
+      "detail": "Unknown in the probate records reviewed"
+    },
+    "iron-heart": {
+      "name": "Iron Heart",
+      "detail": "About 1842–1907 in the Ancestry profile"
+    },
+    "broken-horn-stag-elk": {
+      "name": "Broken Horn Stag Elk",
+      "detail": "Born 1815 in the Ancestry profile"
+    },
+    "black-corn": {
+      "name": "Black Corn",
+      "detail": "Born 1825 in the Ancestry profile"
     }
   },
   "mainChart": {
@@ -1480,14 +1501,18 @@
     },
     {
       "title": "John Little Finger's family",
-      "note": "Yellow Horse, a Brulé man who died in 1886, and Mary Horse Woman, a Crow woman, were the parents of John Little Finger, Grace Black Eagle, and Justin Black Eagle. Mary was also known as Her Horse Looks. The similar name can cause confusion with the distinct Looking Horse family. Mary’s second husband was Black Eagle No. 1, a Minneconjou man. They had a daughter whose name is still to be added. John’s son was Wallace Little Finger, also known as Yellow Horse. Wallace’s son was Leonard Little Finger. Mary Horse Woman’s half-siblings were He Crow, Medicine Woman Mousseau, William High Hawk, and Lucinda Pipe on Head.",
+      "note": "Yellow Horse, a Brulé man who died in 1886, and Mary Horse Woman, a Crow woman, were the parents of John Little Finger, Grace Black Eagle, and Justin Black Eagle. Mary was also known as Her Horse Looks. The similar name can cause confusion with the distinct Looking Horse family. Mary’s second husband was Black Eagle No. 1, a Minneconjou man. They had a daughter whose name is still to be added. John’s son was Wallace Little Finger, also known as Yellow Horse. Wallace’s son was Leonard Little Finger. Mary Horse Woman’s half-siblings were He Crow, Medicine Woman Mousseau, William High Hawk, and Lucinda Pipe on Head. As he got older, John moved between households. Family research notes list Lucinda Pipe on Head, Medicine Woman Mousseau, and Straw Woman among the people he lived with. The probate grandparents sheet names Hungry or Bear Turtle on the maternal side and records both paternal grandparents as unknown. The Iron Heart profile lists Broken Horn Stag Elk and Black Corn as his parents. In the 1917 estate letter, Justin Black Eagle reported that Iron Heart and Yellow Horse were brothers. The letter leaves the exact relationship and Yellow Horse’s parentage unspecified.",
       "focus": "john-little-finger",
       "generations": [
         [
+          "yellow-horse-father-unknown",
           "mary-crow-parent",
-          "runs-after"
+          "runs-after",
+          "broken-horn-stag-elk",
+          "black-corn"
         ],
         [
+          "iron-heart",
           "yellow-horse",
           "mary-horse-woman",
           "black-eagle"
@@ -1617,30 +1642,58 @@
           "source": "Research summary of testimony · exact passage and identity pending",
           "record": null,
           "page": 1
+        },
+        {
+          "from": "yellow-horse",
+          "to": "yellow-horse-father-unknown",
+          "label": "has an unidentified father, shown here as",
+          "record": "grace-black-eagle-probate",
+          "page": 2,
+          "source": "Probate grandparents sheet, paternal side"
+        },
+        {
+          "from": "iron-heart",
+          "to": "yellow-horse",
+          "label": "is reported by Justin Black Eagle to be the brother of",
+          "record": "little-finger-probate-records",
+          "page": 1,
+          "source": "December 20, 1917 Iron Heart estate inquiry"
+        },
+        {
+          "from": "iron-heart",
+          "to": "broken-horn-stag-elk",
+          "label": "is listed in the Ancestry profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Lakota Kinship Clusters Ancestry tree, Iron Heart profile"
+        },
+        {
+          "from": "iron-heart",
+          "to": "black-corn",
+          "label": "is listed in the Ancestry profile as a child of",
+          "record": null,
+          "page": 1,
+          "source": "Lakota Kinship Clusters Ancestry tree, Iron Heart profile"
         }
       ],
       "source": "John Little Finger’s probate record and Grace Black Eagle’s probate record. The August 4, 1922 letter places John Little Finger, Justin Black Eagle, and Grace Brings The Good in the Yellow Horse and Horse Woman family group. The August 9, 1922 agency letter identifies Horse Woman as the mother of Justin and Grace and also names her as Mrs. Black Eagle.",
       "familyGroup": "little-finger"
     },
     {
-      "title": "John Little Finger’s household moves and Turtle Bear’s family",
-      "note": "John Little Finger was older when he moved between households. The family research notes name Lucinda Pipe on Head, Medicine Woman Mousseau, and Straw Woman among the people he lived with. Some public accounts identify Chief Spotted Elk as the grandfather. In the Spotted Elk Tiwahe’s reading of the testimony, Turtle Bear was the grandfather of several people in this kinship cluster, including John Little Finger.",
-      "focus": "john-little-finger",
+      "title": "Turtle Bear (Hungry) and his children",
+      "note": "These relationships come from probate testimony and the working family tree. Witnesses differed on William High Hawk’s parentage. Mary Horse Woman’s parentage is discussed with the Little Finger records.",
+      "focus": "turtle-bear",
       "generations": [
         [
           "turtle-bear"
         ],
         [
-          "mary-horse-woman",
           "lucinda-pipe-on-head",
           "he-crow",
+          "looking-cloud",
           "shedding-bear-younger",
           "medicine-woman-mousseau",
-          "william-high-hawk",
-          "straw-woman"
-        ],
-        [
-          "john-little-finger"
+          "william-high-hawk"
         ]
       ],
       "links": [
@@ -1678,55 +1731,23 @@
         },
         {
           "from": "william-high-hawk",
-          "label": "is the son of",
+          "label": "is identified by Stanley Red Feather as a child of",
           "to": "turtle-bear",
-          "record": null,
+          "record": "stanley-red-feather",
           "page": 1,
-          "source": "Family tree and testimony"
+          "source": "Stanley Red Feather testimony, p. 1"
         },
         {
-          "from": "lucinda-pipe-on-head",
-          "label": "is the sister of",
-          "to": "mary-horse-woman",
-          "record": null,
+          "from": "looking-cloud",
+          "to": "turtle-bear",
+          "label": "is identified by Stanley Red Feather as a child of",
+          "record": "stanley-red-feather",
           "page": 1,
-          "source": "Family tree"
-        },
-        {
-          "from": "john-little-finger",
-          "label": "is the son of",
-          "to": "mary-horse-woman",
-          "record": null,
-          "page": 1,
-          "source": "Family tree"
-        },
-        {
-          "from": "john-little-finger",
-          "label": "is listed in family research notes as having lived with",
-          "to": "lucinda-pipe-on-head",
-          "record": null,
-          "page": 1,
-          "source": "Family research notes"
-        },
-        {
-          "from": "john-little-finger",
-          "label": "is listed in family research notes as having lived with",
-          "to": "medicine-woman-mousseau",
-          "record": null,
-          "page": 1,
-          "source": "Family research notes"
-        },
-        {
-          "from": "john-little-finger",
-          "label": "is listed in family research notes as having lived with",
-          "to": "straw-woman",
-          "record": null,
-          "page": 1,
-          "source": "Family research notes"
+          "source": "Stanley Red Feather testimony, p. 1"
         }
       ],
-      "familyGroup": "little-finger",
-      "source": "Testimony in the William High Hawk probate records and Spotted Elk Tiwahe research notes on John Little Finger’s household moves."
+      "familyGroup": "high-hawk",
+      "source": "William High Hawk probate testimony and the working family tree."
     },
     {
       "title": "Coyote Woman’s family",
@@ -2385,7 +2406,7 @@
       "appeared": "The Washington Post described Leonard Little Finger as a descendant of Chief Big Foot on July 17, 2022. The Dawes County Journal described him as a great-great-grandson in April 2017. The Spotted Elk Tiwahe’s research notes describe other documentary and newspaper accounts and trace the wider circulation of the story to Leonard’s appointment as estate administrator through the tribal court and the subsequent return of the lock of hair. In the family’s account, McGregor’s book helped support the appointment, and Leonard Little Finger, Richard Broken Nose, Francis He Crow, and Johnson Bear Robe brought the repatriation story to NPR, after which it circulated widely through other media outlets. The exact court record and NPR report are still to be cited. Reported settings for these claims include descendant meetings, meetings with heads of state, documentaries, Wounded Knee anniversary gatherings, and events in Barre, Massachusetts. Specific citations for Leonard’s own statements are still pending.",
       "recordSays": "The family traces Leonard through Wallace Little Finger and John Little Finger, whose parents were Yellow Horse and Mary Horse Woman. The Spotted Elk Tiwahe’s reading of the probate testimony identifies Turtle Bear as a grandfather in John’s kinship cluster. The probate review records Yellow Horse’s parents as unknown. The August 1922 letters document the Yellow Horse and Horse Woman family group.",
       "source": "John Little Finger and Grace Black Eagle probate records, William High Hawk probate testimony, and the August 4 and August 9, 1922 agency letters.",
-      "record": "little-finger-probate-records",
+      "record": "grace-black-eagle-probate",
       "person": "Leonard Little Finger",
       "claimUrl": "https://www.washingtonpost.com/history/2022/07/17/stolen-wounded-knee-artifacts-native-americans/",
       "claimLinkLabel": "Read the published account",
@@ -2733,21 +2754,29 @@
       ]
     },
     {
-      "id": "little-finger-probate-records",
-      "title": "Little Finger and Horse Woman family records",
-      "citation": "Probate excerpts and Thunder Butte Sub-Station correspondence to Edward S. Stewart, December 20, 1917.",
+      "id": "grace-black-eagle-probate",
+      "title": "Grace Black Eagle’s probate: parents and grandparents",
+      "citation": "Grace Black Eagle probate excerpts, as identified in the Spotted Elk Tiwahe research files. The supplied scans show the parents and grandparents sections. The case cover is needed to confirm the attribution.",
       "credit": "Scan supplied by the Spotted Elk Tiwahe.",
       "pages": [
         {
           "src": "./scans/little-finger-probate-records/page-1.png",
-          "caption": "Parents section, page 19",
+          "caption": "Grace Black Eagle probate · Page 19 · Parents",
           "lookFor": "The parents section names Yellow Horse and Mary Horse Woman, also recorded as Mary Yellow Horse."
         },
         {
           "src": "./scans/little-finger-probate-records/page-2.png",
-          "caption": "Grandparents section, sheet 2",
+          "caption": "Grace Black Eagle probate · Sheet 2 · Grandparents",
           "lookFor": "The form lists Hungry or Bear Turtle and Straw Woman as the maternal grandparents and records both paternal grandparents as unknown."
-        },
+        }
+      ]
+    },
+    {
+      "id": "little-finger-probate-records",
+      "title": "Iron Heart estate inquiry, December 20, 1917",
+      "citation": "Thunder Butte Sub-Station correspondence to Edward S. Stewart, December 20, 1917.",
+      "credit": "Scan supplied by the Spotted Elk Tiwahe.",
+      "pages": [
         {
           "src": "./scans/little-finger-probate-records/page-3.jpg",
           "caption": "Iron Heart estate inquiry, December 20, 1917",
