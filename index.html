@@ -140,7 +140,10 @@
   .claim-k{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 .3rem}
   .claim-text{font-family:var(--serif);font-size:1.15rem;margin:0}
   .claim-body{display:grid;gap:1rem;padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--line)}
-  @media(min-width:720px){.claim-body{grid-template-columns:1fr 1.6fr auto;align-items:end}}
+  @media(min-width:720px){.claim-body{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}}
+  .claim-body > *{min-width:0;overflow-wrap:anywhere}
+  .claim-body .says{grid-column:1/-1}
+  .claim-body > .btn{justify-self:start}
   .claim-body p{margin:0;font-size:.9375rem}
   .claim-body .says .claim-k{color:var(--gold)}
 
@@ -217,7 +220,19 @@
     h1{font-size:29pt}
     h2,h3{break-after:avoid}
     p{orphans:3;widows:3}
-    .cmp-row,.cmp-head,.claim,.rels li{break-inside:avoid}
+    .cmp,.claim{overflow:visible}
+    .cmp-row,.cmp-head{grid-template-columns:minmax(0,1fr) repeat(2,minmax(0,1.55fr));break-inside:avoid}
+    .cmp-head > div:first-child{display:block}
+    .cmp-row .label{grid-column:auto;padding:.45rem}
+    .cmp-row .cell{padding:.45rem}
+    .claims,.claim-body{display:block}
+    .claim{break-inside:auto;margin:0 0 .8rem}
+    .claim-top{break-after:avoid;padding:.55rem .7rem}
+    .claim-top p{margin:.25rem 0}
+    .claim-body{padding:.55rem .7rem}
+    .claim-body > div + div{margin-top:.5rem}
+    .claim-body .claim-k{break-after:avoid;margin:0 0 .15rem}
+    .rels li{break-inside:avoid}
     .cmp-photo img{max-height:2in;object-fit:contain}
     .related,.family-group > .related{display:block}
     .related .chart,.chart{margin:0 0 1rem;padding:.7rem;background:#fff}
@@ -324,9 +339,9 @@
             <tr><th scope="row">Spotted Elk surname line<span class="line-members">Calvin Spotted Elk</span></th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
             <tr><th scope="row">Richard (“Dick”) Spotted Elk line</th><td>Probate and continuity records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
             <tr><th scope="row">Weasel Bear line<span class="line-members">Joelle Follows</span></th><td>Interagency correspondence, history card, probate records, and oral history</td><td>Collateral family connection documented</td><td>Closely related branch</td></tr>
-            <tr><th scope="row">Richard line</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
-            <tr><th scope="row">Garnier line</th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
-            <tr><th scope="row">Running Eagle line</th><td>Research in progress</td><td>Research in progress</td><td>Closely related branch</td></tr>
+            <tr><th scope="row">Richard line<span class="line-members">Angela Richard, Pete Richard Sr., Pete Richard Jr.</span></th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Garnier line<span class="line-members">Christine Garnier, Tiny Garnier, Madeline Garnier, Dirk Garnier</span></th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Running Eagle line<span class="line-members">Matthew Running Eagle, Barney Running Eagle</span></th><td>Research in progress</td><td>Research in progress</td><td>Closely related branch</td></tr>
             <tr><th scope="row">He Crow line<span class="line-members">Mike He Crow</span></th><td>Probate records, census records, and marriage timeline</td><td>Direct descent has not been established in the records reviewed</td><td>Independent line with later marital ties</td></tr>
             <tr><th scope="row">Pipe on Head / Lone Man / Broken Nose line<span class="line-members">Richard Broken Nose, Cedric Broken Nose</span></th><td>Probate records, testimony, documentary and radio interviews, U.S. Park Service interviews, and Congressional Record attribution</td><td>Direct descent has not been established in the records reviewed; primary sources conflict with the public attribution</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships. The claimed direct link requires specific evidence.</td></tr>
             <tr><th scope="row">W High Hawk line</th><td>Probate testimony and records</td><td>Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
@@ -2426,10 +2441,11 @@
     {
       "kind": "related",
       "claim": "William High Hawk, Medicine Woman Mousseau, and Lucinda",
-      "appeared": "William High Hawk probate records. Exact pages pending.",
-      "recordSays": "The estate correspondence records conflicting testimony about family relationships, including a reported half-sister relationship between Medicine Woman and Lucinda.",
+      "appeared": "William High Hawk estate file, agency correspondence.",
+      "recordSays": "In his June 17, 1921 letter, Edward S. Stewart asked that Lucinda Pipe on Head and Her Looking Horse be questioned together about Medicine Woman’s statements. The letter documents the agency’s inquiry.",
       "source": "William High Hawk probate records, including Gorman and Stewart’s June 1921 correspondence and Medicine Woman Mousseau’s June 27, 1921 statement.",
-      "record": null
+      "record": "high-hawk-correspondence",
+      "page": 1
     }
   ],
   "records": [
@@ -2585,6 +2601,60 @@
           "lookFor": "To be supplied: what readers should notice in this photograph."
         }
       ]
+    },
+    {
+      "id": "high-hawk-correspondence",
+      "title": "William High Hawk estate correspondence",
+      "citation": "William High Hawk estate file, agency correspondence about testimony and family relationships.",
+      "credit": "Digital copy from the Spotted Elk Tiwahe research files.",
+      "pages": [
+        {
+          "src": "./scans/high-hawk-correspondence/page-1.jpg",
+          "caption": "Edward S. Stewart to M. E. Gorman, June 17, 1921",
+          "lookFor": "Stewart asks that Lucinda Pipe on Head and Her Looking Horse be questioned together about Medicine Woman’s statements. The name Her Looking Horse is written as it appears in the letter."
+        },
+        {
+          "src": "./scans/high-hawk-correspondence/page-2.jpg",
+          "caption": "High Hawk estate correspondence",
+          "lookFor": "Read the correspondence in the context of the agency’s inquiry into family relationships."
+        },
+        {
+          "src": "./scans/high-hawk-correspondence/page-3.jpg",
+          "caption": "Correspondence concerning Lucinda Pipe on Head’s testimony",
+          "lookFor": "Read alongside the testimony to see which family relationships the agency was investigating."
+        }
+      ]
+    },
+    {
+      "id": "mcgregor-james-pipe-on-head",
+      "title": "James Pipe on Head’s published survivor statement",
+      "citation": "McGregor, The Wounded Knee Massacre: From the Viewpoint of the Sioux, pp. 98–99. Statement taken October 21, 1913, at Pine Ridge Agency. Henry Standing Bear, interpreter.",
+      "credit": "Digital copy from the Spotted Elk Tiwahe research files.",
+      "pages": [
+        {
+          "src": "./scans/mcgregor-james-pipe-on-head/page-1.png",
+          "caption": "Printed page 98",
+          "lookFor": "James describes Big Foot as his grandfather. This page records James’s own account."
+        },
+        {
+          "src": "./scans/mcgregor-james-pipe-on-head/page-2.png",
+          "caption": "Printed page 99",
+          "lookFor": "James continues his account of the shooting, describing his mother and an infant."
+        }
+      ]
+    },
+    {
+      "id": "mcgregor-kills-plenty",
+      "title": "Alice Dog Arm (Kills Plenty)’s published survivor statement",
+      "citation": "McGregor, The Wounded Knee Massacre: From the Viewpoint of the Sioux, Alice Dog Arm (Kills Plenty) statement excerpt.",
+      "credit": "Digital copy from the Spotted Elk Tiwahe research files.",
+      "pages": [
+        {
+          "src": "./scans/mcgregor-kills-plenty/page-1.png",
+          "caption": "Published statement excerpt",
+          "lookFor": "Alice recalls running and hiding in a ditch with her mother and two brothers."
+        }
+      ]
     }
   ],
   "profiles": [
@@ -2628,7 +2698,16 @@
       "id": "james-pipe-on-head",
       "name": "James Pipe on Head",
       "chart": "james-pipe-on-head-family",
-      "records": [],
+      "records": [
+        [
+          "mcgregor-james-pipe-on-head",
+          "Read James Pipe on Head’s statement"
+        ],
+        [
+          "mcgregor-kills-plenty",
+          "Read Alice Dog Arm (Kills Plenty)’s statement"
+        ]
+      ],
       "paragraphs": [
         "The probate records reviewed identify John Lone Man and Lucinda Pipe on Head, also known as Waits for Her, as James’s parents. When James was two years old, Lucinda married Pipe on Head, who became his stepfather. The 1893 Pine Ridge Agency census lists a boy named Big Foot in the Pipe on Head household. Later records connect that name to James.",
         "The Spotted Elk Tiwahe’s research notes say the National Park Service widely circulated McGregor’s book at Mount Rushmore. The accounts differ on who was present and what happened during the shooting.",
@@ -2827,8 +2906,8 @@
           ${c.person ? `<h3 class="claim-text" id="claim-${i}">${txt(c.person)}</h3><p>${txt(c.claim)}</p>` : `<p class="claim-text" id="claim-${i}">${txt(c.claim)}</p>`}
         </div>
         <div class="claim-body">
-          <div><p class="claim-k">${c.kind === "related" ? "Where to look" : "Where the claim appeared"}</p><p>${txt(c.appeared)}</p>${/^https?:\/\//i.test(c.claimUrl || "") ? `<a href="${esc(c.claimUrl)}">${esc(c.claimLinkLabel || 'Read the public claim')}</a>` : ""}</div>
           <div class="says"><p class="claim-k">What the record says</p><p>${txt(c.recordSays)}</p>${c.profileLink ? `<a href="#${esc(c.profileLink)}">Compare the three accounts</a>` : ""}</div>
+          <div><p class="claim-k">${c.kind === "related" ? "Where to look" : "Where the claim appeared"}</p><p>${txt(c.appeared)}</p>${/^https?:\/\//i.test(c.claimUrl || "") ? `<a href="${esc(c.claimUrl)}">${esc(c.claimLinkLabel || 'Read the public claim')}</a>` : ""}</div>
           <div><p class="claim-k">Supporting source</p><p>${txt(c.source)}</p></div>
           ${linked ? `<button class="btn btn-red" data-record="${esc(c.record)}" data-page="${page}">Read the record</button>` : ''}
         </div>
