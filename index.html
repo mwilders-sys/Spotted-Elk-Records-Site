@@ -264,6 +264,16 @@
   .family-records #family-profiles > .family-profile:first-child{margin-top:0}
   @media print{.family-records{margin-top:1rem;padding-top:.65rem}}
   .line-members{display:block;margin-top:.25rem;color:var(--muted);font-weight:400}
+
+  .descent-status{font-weight:650}
+  .descent-status.direct{color:#79D8C1}
+  .descent-status.other{color:#E8DDC8}
+  .descent-status.unestablished{color:#C5B3E6}
+  @media print{
+    .descent-status.direct{color:#175749}
+    .descent-status.other{color:#493D2A}
+    .descent-status.unestablished{color:#523C70}
+  }
 </style>
 </head>
 <body>
@@ -344,18 +354,18 @@
           <caption class="sr-only">Evidence summary by family line</caption>
           <thead><tr><th scope="col">Family / Line</th><th scope="col">Sources Reviewed</th><th scope="col">Direct Descent from Chief Spotted Elk</th><th scope="col">Historical Reading</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Spotted Elk surname line<span class="line-members">Calvin Spotted Elk</span></th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
-            <tr><th scope="row">Richard (“Dick”) Spotted Elk line</th><td>Probate and continuity records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
-            <tr><th scope="row">Weasel Bear line<span class="line-members">Joelle Follows</span></th><td>Interagency correspondence, history card, probate records, and oral history</td><td>Collateral family connection documented</td><td>Closely related branch</td></tr>
-            <tr><th scope="row">Richard line<span class="line-members">Angela Richard, Pete Richard Sr., Pete Richard Jr.</span></th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
-            <tr><th scope="row">Garnier line<span class="line-members">Christine Garnier, Tiny Garnier, Madeline Garnier, Dirk Garnier</span></th><td>Probate, estate, census, and land records</td><td>Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Spotted Elk surname line<span class="line-members">Calvin Spotted Elk</span></th><td>Probate, estate, census, and land records</td><td class="descent-status direct">Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Richard (“Dick”) Spotted Elk line</th><td>Probate and continuity records</td><td class="descent-status direct">Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Weasel Bear line<span class="line-members">Joelle Follows</span></th><td>Interagency correspondence, history card, probate records, and oral history</td><td class="descent-status other">Collateral family connection documented</td><td>Closely related branch</td></tr>
+            <tr><th scope="row">Richard line<span class="line-members">Angela Richard, Pete Richard Sr., Pete Richard Jr.</span></th><td>Probate, estate, census, and land records</td><td class="descent-status direct">Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
+            <tr><th scope="row">Garnier line<span class="line-members">Christine Garnier, Tiny Garnier, Madeline Garnier, Dirk Garnier</span></th><td>Probate, estate, census, and land records</td><td class="descent-status direct">Direct descent documented in primary sources</td><td>Direct documented branch</td></tr>
             <tr><th scope="row">Running Eagle line<span class="line-members">Matthew Running Eagle, Barney Running Eagle</span></th><td>Research in progress</td><td>Research in progress</td><td>Closely related branch</td></tr>
-            <tr><th scope="row">He Crow line<span class="line-members">Mike He Crow</span></th><td>Probate records, census records, and marriage timeline</td><td>Direct descent has not been established in the records reviewed</td><td>Independent line with later marital ties</td></tr>
-            <tr><th scope="row">Pipe on Head / Lone Man / Broken Nose line<span class="line-members">Richard Broken Nose, Cedric Broken Nose</span></th><td>Probate records, testimony, documentary and radio interviews, U.S. Park Service interviews, and Congressional Record attribution</td><td>Direct descent has not been established in the records reviewed; primary sources conflict with the public attribution</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships. The claimed direct link requires specific evidence.</td></tr>
-            <tr><th scope="row">W High Hawk line</th><td>Probate testimony and records</td><td>Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
-            <tr><th scope="row">Little Finger / Yellow Horse line<span class="line-members">Leonard Little Finger</span></th><td>Probate records, census records, documentary and radio interviews, and U.S. Park Service interviews</td><td>Direct descent has not been established in the records reviewed</td><td>Independent documented line</td></tr>
-            <tr><th scope="row">Starr Comes Out line<span class="line-members">Frank Starr Comes Out</span></th><td>Marriage records and family ties</td><td>Direct descent has not been established in the records reviewed</td><td>Connection to the He Crow line</td></tr>
-            <tr><th scope="row">Mousseau line</th><td>Probate review in progress</td><td>Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
+            <tr><th scope="row">He Crow line<span class="line-members">Mike He Crow</span></th><td>Probate records, census records, and marriage timeline</td><td class="descent-status unestablished">Direct descent has not been established in the records reviewed</td><td>Independent line with later marital ties</td></tr>
+            <tr><th scope="row">Pipe on Head / Lone Man / Broken Nose line<span class="line-members">Richard Broken Nose, Cedric Broken Nose</span></th><td>Probate records, testimony, documentary and radio interviews, U.S. Park Service interviews, and Congressional Record attribution</td><td class="descent-status unestablished">Direct descent has not been established in the records reviewed; primary sources conflict with the public attribution</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships. The claimed direct link requires specific evidence.</td></tr>
+            <tr><th scope="row">W High Hawk line</th><td>Probate testimony and records</td><td class="descent-status unestablished">Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
+            <tr><th scope="row">Little Finger / Yellow Horse line<span class="line-members">Leonard Little Finger</span></th><td>Probate records, census records, documentary and radio interviews, and U.S. Park Service interviews</td><td class="descent-status unestablished">Direct descent has not been established in the records reviewed</td><td>Independent documented line</td></tr>
+            <tr><th scope="row">Starr Comes Out line<span class="line-members">Frank Starr Comes Out</span></th><td>Marriage records and family ties</td><td class="descent-status unestablished">Direct descent has not been established in the records reviewed</td><td>Connection to the He Crow line</td></tr>
+            <tr><th scope="row">Mousseau line</th><td>Probate review in progress</td><td class="descent-status unestablished">Direct descent has not been established in the records reviewed</td><td>Kinship cluster documented in primary sources, with conflicting testimony about some family relationships</td></tr>
           </tbody>
         </table>
       </div>
