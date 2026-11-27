@@ -893,6 +893,17 @@
     "runs-after": {
       "name": "Runs After",
       "alt": "Also recorded as Chases"
+    },
+    "six-feathers-elder": {
+      "name": "Six Feathers",
+      "detail": "Born about 1857 in the census compilation"
+    },
+    "her-road-six-feathers": {
+      "name": "Her Road",
+      "alt": "Tacanku"
+    },
+    "emma-bitters": {
+      "name": "Emma Bitters"
     }
   },
   "mainChart": {
@@ -1214,21 +1225,23 @@
     },
     {
       "title": "The Oglala Big Foot's family",
-      "note": "Big Foot, White Horse Owner, Plenty Bear, and John Six Feathers are buried in Kyle. The Oglala Bigfoot Family Tree lists Cherry Eye as Plenty Bear’s spouse and Thomas Plenty Bear, Medicine Track, and Julia as his children.",
+      "note": "The 2011 compilation identifies Plenty Bear as the son of Big Foot and White Horse Owner. The census places their households near one another. The elder Six Feathers heads a neighboring household, and his connection to Big Foot remains under review. Her Road’s will names John Six Feathers and Emma Bitters as her children. Medicine Track’s placement remains under review because the compilation lists that name in different households.",
       "focus": "big-foot-oglala",
       "generations": [
         [
           "big-foot-oglala",
-          "white-horse-owner"
+          "white-horse-owner",
+          "six-feathers-elder",
+          "her-road-six-feathers"
         ],
         [
           "cherry-eye",
           "plenty-bear",
-          "john-six-feathers"
+          "john-six-feathers",
+          "emma-bitters"
         ],
         [
           "thomas-plenty-bear",
-          "medicine-track",
           "julia-child-of-plenty-bear"
         ]
       ],
@@ -1237,41 +1250,33 @@
           "from": "white-horse-owner",
           "label": "is the wife of",
           "to": "big-foot-oglala",
-          "record": null,
+          "record": "plenty-bear-family",
           "page": 1,
-          "source": "Census records and family tree"
+          "source": "1894 Pine Ridge census excerpt"
         },
         {
           "from": "plenty-bear",
           "label": "is the son of",
           "to": "big-foot-oglala",
-          "record": null,
+          "record": "plenty-bear-family",
           "page": 1,
-          "source": "Census records and family tree"
-        },
-        {
-          "from": "john-six-feathers",
-          "label": "is the son of",
-          "to": "big-foot-oglala",
-          "record": null,
-          "page": 1,
-          "source": "Census records and family tree"
+          "source": "2011 family compilation, p. 1, for parentage. 1894 census excerpt for neighboring households"
         },
         {
           "from": "plenty-bear",
           "to": "white-horse-owner",
           "label": "is the son of",
-          "record": null,
+          "record": "plenty-bear-family",
           "page": 1,
-          "source": "Census records and family tree"
+          "source": "2011 family compilation, p. 1, for parentage. 1894 census excerpt for neighboring households"
         },
         {
           "from": "cherry-eye",
           "to": "plenty-bear",
           "label": "is the spouse of",
-          "record": null,
+          "record": "plenty-bear-family",
           "page": 1,
-          "source": "Family tree"
+          "source": "1894 Pine Ridge census excerpt"
         },
         {
           "from": "thomas-plenty-bear",
@@ -1282,20 +1287,36 @@
           "source": "Family tree"
         },
         {
-          "from": "medicine-track",
-          "to": "plenty-bear",
-          "label": "is the daughter of",
-          "record": null,
-          "page": 1,
-          "source": "Family tree"
-        },
-        {
           "from": "julia-child-of-plenty-bear",
           "to": "plenty-bear",
           "label": "is the daughter of",
-          "record": null,
+          "record": "plenty-bear-family",
+          "page": 2,
+          "source": "1892 Pine Ridge census excerpt and Plenty Bear compilation"
+        },
+        {
+          "from": "john-six-feathers",
+          "to": "six-feathers-elder",
+          "label": "is listed as the son of",
+          "record": "plenty-bear-family",
           "page": 1,
-          "source": "Family tree"
+          "source": "Pine Ridge census entries"
+        },
+        {
+          "from": "john-six-feathers",
+          "to": "her-road-six-feathers",
+          "label": "is named as the son of",
+          "record": "plenty-bear-family",
+          "page": 3,
+          "source": "Her Road’s will, 1916"
+        },
+        {
+          "from": "emma-bitters",
+          "to": "her-road-six-feathers",
+          "label": "is named as the daughter of",
+          "record": "plenty-bear-family",
+          "page": 3,
+          "source": "Her Road’s will, 1916"
         }
       ],
       "source": "Pine Ridge Agency Indian Census Rolls, 1896–1899, National Archives microfilm publication M595, roll 367. Household page and image number pending. Oglala Bigfoot Family Tree, supplied screenshot, Plenty Bear profile (family-tree dates and the spouse and children listed for Plenty Bear).",
@@ -2798,6 +2819,29 @@
           "src": "./scans/crazy-horse-band-signatures/page-1.png",
           "caption": "Survivors of the Crazy Horse Band signature page",
           "lookFor": "This closing page lists the officers and other signers of the Survivors of the Crazy Horse Band."
+        }
+      ]
+    },
+    {
+      "id": "plenty-bear-family",
+      "title": "Oglala Big Foot family: census excerpts and Her Road’s will",
+      "citation": "Plenty Bear, compiled by Michelle B. and Calvin Spotted Elk, September 2011, pp. 14–16. Pine Ridge Indian Census Rolls and Indian Wills, 1911–1921, Book 4, Bureau of Indian Affairs.",
+      "credit": "Excerpts supplied by the Spotted Elk Tiwahe.",
+      "pages": [
+        {
+          "src": "./scans/plenty-bear-family/page-14.jpg",
+          "caption": "Compilation page 14 · 1894 Pine Ridge census excerpt",
+          "lookFor": "The excerpt places Ste Si Tanka and White Horse Owner near the Six Feathers and Plenty Bear households. The census records relationships within households."
+        },
+        {
+          "src": "./scans/plenty-bear-family/page-15.jpg",
+          "caption": "Compilation page 15 · 1892, 1904, and 1921 census excerpts",
+          "lookFor": "Compare the households and name spellings across the rolls. The compilation notes that Big Foot was absent by the 1899 roll."
+        },
+        {
+          "src": "./scans/plenty-bear-family/page-16.jpg",
+          "caption": "Compilation page 16 · Her Road’s will, April 10, 1916",
+          "lookFor": "Her Road, Oglala Sioux allottee 5173, names John Six Feathers as her son and Emma Bitters as her daughter."
         }
       ]
     }
